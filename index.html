@@ -1,0 +1,4271 @@
+<!DOCTYPE html>
+<html lang="kn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ | Kannada Rajyotsava</title>
+  <meta name="description"
+    content="Celebrate Kannada Rajyotsava - Karnataka Formation Day, 1 November. Explore the Kannada alphabet, famous poets, cinema legends, iconic places, and the pride of Karnataka.">
+  <meta name="keywords" content="Kannada Rajyotsava, Karnataka, Kannada, ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ, Karnataka Formation Day">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Noto+Sans+Kannada:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    /* ═══════════════════════════════════════════════════
+   CSS CUSTOM PROPERTIES
+   ═══════════════════════════════════════════════════ */
+    :root {
+      --yellow: #FFC20E;
+      --yellow-light: #FFD54F;
+      --yellow-glow: rgba(255, 194, 14, 0.4);
+      --red: #E31E24;
+      --red-dark: #B71C1C;
+      --red-glow: rgba(227, 30, 36, 0.4);
+      --maroon: #6B0F1A;
+      --maroon-deep: #3E0712;
+      --white: #FFFFFF;
+      --off-white: #FFF8E7;
+      --dark: #0D0A0B;
+      --dark-card: #1A1012;
+      --dark-card-2: #231518;
+      --gold: #FFD700;
+      --font-kn: 'Noto Sans Kannada', 'Baloo Tamma 2', sans-serif;
+      --font-kn-display: 'Baloo Tamma 2', 'Noto Sans Kannada', sans-serif;
+      --font-en: 'Inter', sans-serif;
+      --nav-height: 64px;
+      --section-pad: clamp(60px, 10vw, 120px);
+    }
+
+    /* ═══════════════════════════════════════════════════
+   RESET & BASE
+   ═══════════════════════════════════════════════════ */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: var(--nav-height);
+    }
+
+    body {
+      font-family: var(--font-en);
+      background: var(--dark);
+      color: var(--off-white);
+      overflow-x: hidden;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--yellow);
+      text-decoration: none;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 2px solid var(--yellow);
+      outline-offset: 2px;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+      color: inherit;
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--dark);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--maroon);
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--red);
+    }
+
+    /* ═══════════════════════════════════════════════════
+   PREFERS REDUCED MOTION
+   ═══════════════════════════════════════════════════ */
+    @media (prefers-reduced-motion: reduce) {
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+
+      .parallax-particle {
+        display: none !important;
+      }
+    }
+
+    /* ═══════════════════════════════════════════════════
+   NAVBAR
+   ═══════════════════════════════════════════════════ */
+    #navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      height: var(--nav-height);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 clamp(16px, 3vw, 40px);
+      background: rgba(13, 10, 11, 0.75);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 194, 14, 0.12);
+      transition: background 0.3s, box-shadow 0.3s;
+    }
+
+    #navbar.scrolled {
+      background: rgba(13, 10, 11, 0.95);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav-brand {
+      font-family: var(--font-kn-display);
+      font-size: clamp(1rem, 2.5vw, 1.35rem);
+      font-weight: 700;
+      color: var(--yellow);
+      white-space: nowrap;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: clamp(8px, 2vw, 24px);
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.85rem;
+      color: var(--off-white);
+      padding: 6px 10px;
+      border-radius: 6px;
+      transition: color 0.2s, background 0.2s;
+      white-space: nowrap;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--yellow);
+      background: rgba(255, 194, 14, 0.08);
+    }
+
+    .en-label {
+      display: none;
+    }
+
+    .nav-controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    #langToggle,
+    #menuToggle {
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      border: 1px solid var(--yellow);
+      color: var(--yellow);
+      background: transparent;
+      transition: all 0.25s;
+    }
+
+    #langToggle:hover,
+    #menuToggle:hover {
+      background: var(--yellow);
+      color: var(--dark);
+    }
+
+    #menuToggle {
+      display: none;
+      font-size: 1.3rem;
+      padding: 4px 10px;
+    }
+
+    /* Mobile nav */
+    @media (max-width: 900px) {
+      #menuToggle {
+        display: inline-flex;
+      }
+
+      .nav-links {
+        position: fixed;
+        top: var(--nav-height);
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+        background: rgba(13, 10, 11, 0.97);
+        backdrop-filter: blur(20px);
+        border-bottom: 1px solid rgba(255, 194, 14, 0.15);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+      }
+
+      .nav-links.open {
+        max-height: 500px;
+      }
+
+      .nav-links a {
+        display: block;
+        padding: 14px 24px;
+        font-size: 1rem;
+        border-radius: 0;
+      }
+    }
+
+    /* ═══════════════════════════════════════════════════
+   HERO SECTION
+   ═══════════════════════════════════════════════════ */
+    #hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      min-height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: radial-gradient(ellipse at 40% 60%, rgba(107, 15, 26, 0.4) 0%, var(--dark) 70%);
+    }
+
+    #hero-canvas {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+    }
+
+    #hero-canvas canvas {
+      display: block;
+    }
+
+    .hero-overlay {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      pointer-events: none;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 1.2s ease, transform 1.2s ease;
+    }
+
+    .hero-overlay.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .hero-title {
+      font-family: var(--font-kn-display);
+      font-size: clamp(1.8rem, 5vw, 4rem);
+      font-weight: 800;
+      color: var(--yellow);
+      text-shadow: 0 0 40px var(--yellow-glow), 0 2px 20px rgba(0, 0, 0, 0.6);
+      line-height: 1.3;
+      margin-bottom: 12px;
+    }
+
+    .hero-subtitle {
+      font-family: var(--font-en);
+      font-size: clamp(1rem, 2.5vw, 1.6rem);
+      font-weight: 300;
+      color: var(--off-white);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-date {
+      margin-top: 16px;
+      font-size: clamp(0.85rem, 1.5vw, 1.1rem);
+      color: var(--yellow-light);
+      font-weight: 500;
+    }
+
+    .scroll-prompt {
+      position: absolute;
+      bottom: 36px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 3;
+      text-align: center;
+      color: rgba(255, 248, 231, 0.6);
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+      animation: scrollBounce 2s ease-in-out infinite;
+    }
+
+    .scroll-prompt .arrow {
+      display: block;
+      font-size: 1.4rem;
+      margin-top: 4px;
+    }
+
+    @keyframes scrollBounce {
+
+      0%,
+      100% {
+        transform: translateX(-50%) translateY(0);
+      }
+
+      50% {
+        transform: translateX(-50%) translateY(10px);
+      }
+    }
+
+    /* Background glow orbs */
+    .bg-glow {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Confetti canvas */
+    #confetti-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      pointer-events: none;
+    }
+
+    /* ═══════════════════════════════════════════════════
+   SECTION COMMON STYLES
+   ═══════════════════════════════════════════════════ */
+    .section {
+      padding: var(--section-pad) clamp(16px, 5vw, 80px);
+      position: relative;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: clamp(40px, 6vw, 70px);
+    }
+
+    .section-header h2 {
+      font-family: var(--font-kn-display);
+      font-size: clamp(1.6rem, 4vw, 2.8rem);
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--yellow), var(--gold), var(--yellow-light));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 8px;
+    }
+
+    .section-header .section-subtitle {
+      font-family: var(--font-en);
+      font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+      color: rgba(255, 248, 231, 0.5);
+      font-weight: 400;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .section-divider {
+      width: 80px;
+      height: 3px;
+      margin: 16px auto 0;
+      background: linear-gradient(90deg, var(--red), var(--yellow));
+      border-radius: 3px;
+    }
+
+    /* Scroll reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal.delay-1 {
+      transition-delay: 0.1s;
+    }
+
+    .reveal.delay-2 {
+      transition-delay: 0.2s;
+    }
+
+    .reveal.delay-3 {
+      transition-delay: 0.3s;
+    }
+
+    /* ═══════════════════════════════════════════════════
+   SECTION 1: ALPHABET
+   ═══════════════════════════════════════════════════ */
+    #alphabet {
+      background: linear-gradient(180deg, var(--dark) 0%, var(--maroon-deep) 50%, var(--dark) 100%);
+    }
+
+    .alpha-toggle {
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      margin-bottom: 40px;
+    }
+
+    .alpha-toggle button {
+      padding: 12px 28px;
+      font-size: 1rem;
+      font-weight: 600;
+      border: 2px solid var(--yellow);
+      color: var(--yellow);
+      transition: all 0.3s;
+    }
+
+    .alpha-toggle button:first-child {
+      border-radius: 30px 0 0 30px;
+    }
+
+    .alpha-toggle button:last-child {
+      border-radius: 0 30px 30px 0;
+    }
+
+    .alpha-toggle button.active {
+      background: var(--yellow);
+      color: var(--dark);
+    }
+
+    .alpha-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+      gap: 16px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .alpha-card {
+      perspective: 600px;
+      cursor: pointer;
+    }
+
+    .alpha-card-inner {
+      position: relative;
+      width: 100%;
+      padding-bottom: 110%;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+
+    .alpha-card.flipped .alpha-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .alpha-card-front,
+    .alpha-card-back {
+      position: absolute;
+      inset: 0;
+      backface-visibility: hidden;
+      border-radius: 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    .alpha-card-front {
+      background: linear-gradient(145deg, var(--dark-card-2), var(--dark-card));
+      border: 1px solid rgba(255, 194, 14, 0.15);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .alpha-card-front:hover {
+      border-color: rgba(255, 194, 14, 0.4);
+      box-shadow: 0 0 25px var(--yellow-glow);
+    }
+
+    .alpha-card-front .letter {
+      font-family: var(--font-kn);
+      font-size: clamp(2rem, 4vw, 2.6rem);
+      font-weight: 700;
+      color: var(--yellow);
+    }
+
+    .alpha-card-front .translit {
+      font-size: 0.7rem;
+      color: rgba(255, 248, 231, 0.5);
+      margin-top: 4px;
+    }
+
+    .alpha-card-back {
+      background: linear-gradient(145deg, var(--red-dark), var(--maroon));
+      border: 1px solid rgba(227, 30, 36, 0.3);
+      transform: rotateY(180deg);
+      text-align: center;
+    }
+
+    .alpha-card-back .letter-back {
+      font-family: var(--font-kn);
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--yellow);
+    }
+
+    .alpha-card-back .example {
+      font-family: var(--font-kn);
+      font-size: 0.9rem;
+      color: var(--off-white);
+      margin-top: 6px;
+    }
+
+    .alpha-card-back .meaning {
+      font-size: 0.7rem;
+      color: rgba(255, 248, 231, 0.6);
+      margin-top: 2px;
+    }
+
+    .alpha-card-back .speak-btn {
+      margin-top: 8px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: rgba(255, 194, 14, 0.2);
+      border: 1px solid var(--yellow);
+      color: var(--yellow);
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+    }
+
+    .alpha-card-back .speak-btn:hover {
+      background: var(--yellow);
+      color: var(--dark);
+    }
+
+    /* ═══════════════════════════════════════════════════
+   SECTION 2: POETS CAROUSEL
+   ═══════════════════════════════════════════════════ */
+    #poets {
+      background: linear-gradient(180deg, var(--dark) 0%, #120A0D 50%, var(--dark) 100%);
+    }
+
+    .carousel-container {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease;
+      gap: 24px;
+      padding: 20px 0;
+    }
+
+    .carousel-card {
+      flex: 0 0 320px;
+      background: linear-gradient(160deg, var(--dark-card-2), var(--dark-card));
+      border: 1px solid rgba(255, 194, 14, 0.1);
+      border-radius: 20px;
+      padding: 28px 24px;
+      position: relative;
+      transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+      overflow: hidden;
+    }
+
+    .carousel-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--yellow), var(--red));
+      border-radius: 20px 20px 0 0;
+    }
+
+    .carousel-card:hover {
+      transform: translateY(-6px) scale(1.02);
+      box-shadow: 0 12px 40px rgba(255, 194, 14, 0.12);
+      border-color: rgba(255, 194, 14, 0.25);
+    }
+
+    .poet-avatar-wrap {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      margin: 0 auto 16px;
+      position: relative;
+      padding: 3px;
+      background: linear-gradient(135deg, var(--gold), var(--red));
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5), 0 0 12px rgba(255, 194, 14, 0.25);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .carousel-card:hover .poet-avatar-wrap {
+      transform: scale(1.05);
+      box-shadow: 0 6px 25px rgba(255, 194, 14, 0.4);
+    }
+
+    .poet-img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .poet-avatar-fallback {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-kn-display);
+      font-size: 2rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--maroon), var(--red-dark));
+      color: var(--yellow);
+    }
+
+    .jnanpith-badge {
+      position: absolute;
+      top: -4px;
+      right: -4px;
+      background: linear-gradient(135deg, var(--gold), #FFA000);
+      color: var(--dark);
+      font-size: 0.6rem;
+      font-weight: 800;
+      padding: 3px 7px;
+      border-radius: 10px;
+      font-family: var(--font-en);
+      box-shadow: 0 2px 8px rgba(255, 215, 0, 0.5);
+      white-space: nowrap;
+      z-index: 2;
+    }
+
+    .poet-name-kn {
+      font-family: var(--font-kn);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--yellow);
+      text-align: center;
+    }
+
+    .poet-name-en {
+      font-family: var(--font-en);
+      font-size: 0.85rem;
+      color: rgba(255, 248, 231, 0.6);
+      text-align: center;
+      margin-bottom: 4px;
+    }
+
+    .poet-era {
+      text-align: center;
+      font-size: 0.75rem;
+      color: var(--red);
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+
+    .poet-works {
+      font-size: 0.82rem;
+      color: rgba(255, 248, 231, 0.7);
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    .poet-works strong {
+      color: var(--yellow-light);
+    }
+
+    .poet-legacy {
+      font-size: 0.78rem;
+      color: rgba(255, 248, 231, 0.5);
+      font-style: italic;
+      border-top: 1px solid rgba(255, 194, 14, 0.1);
+      padding-top: 10px;
+    }
+
+    .carousel-nav {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .carousel-btn {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      border: 2px solid var(--yellow);
+      color: var(--yellow);
+      font-size: 1.3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.25s;
+    }
+
+    .carousel-btn:hover {
+      background: var(--yellow);
+      color: var(--dark);
+    }
+
+    /* ═══════════════════════════════════════════════════
+   SECTION 3: CINEMA LEGENDS
+   ═══════════════════════════════════════════════════ */
+    #cinema {
+      background: linear-gradient(180deg, var(--dark) 0%, #0D0608 50%, var(--dark) 100%);
+    }
+
+    .cinema-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .cinema-card {
+      background: linear-gradient(160deg, var(--dark-card-2), var(--dark-card));
+      border: 1px solid rgba(227, 30, 36, 0.12);
+      border-radius: 18px;
+      padding: 0;
+      overflow: hidden;
+      transition: transform 0.35s, box-shadow 0.35s;
+      position: relative;
+    }
+
+    .cinema-card:hover {
+      transform: perspective(800px) rotateY(-3deg) rotateX(2deg) translateY(-6px);
+      box-shadow: 0 16px 50px rgba(227, 30, 36, 0.15), 0 0 30px rgba(255, 194, 14, 0.06);
+    }
+
+    .cinema-spotlight {
+      height: 6px;
+      background: linear-gradient(90deg, var(--red), var(--yellow), var(--red));
+    }
+
+    .cinema-poster-wrap {
+      position: relative;
+      height: 250px;
+      overflow: hidden;
+      background: #110507;
+    }
+
+    .cinema-poster-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+      transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    .cinema-card:hover .cinema-poster-img {
+      transform: scale(1.08);
+    }
+
+    .cinema-poster-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, var(--dark-card) 5%, rgba(26, 16, 18, 0.55) 50%, rgba(0, 0, 0, 0.2) 80%, transparent 100%);
+      pointer-events: none;
+    }
+
+    .cinema-title-badge {
+      position: absolute;
+      bottom: 12px;
+      left: 16px;
+      right: 16px;
+      background: rgba(13, 10, 11, 0.88);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      padding: 6px 12px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 194, 14, 0.3);
+      font-size: 0.76rem;
+      font-weight: 700;
+      color: var(--yellow);
+      text-align: center;
+      letter-spacing: 0.5px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    }
+
+    .cinema-body {
+      padding: 20px 24px 24px;
+    }
+
+    .cinema-name-kn {
+      font-family: var(--font-kn);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--yellow);
+      text-align: center;
+    }
+
+    .cinema-name-en {
+      font-family: var(--font-en);
+      font-size: 0.82rem;
+      color: rgba(255, 248, 231, 0.5);
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    .cinema-films {
+      font-size: 0.82rem;
+      color: rgba(255, 248, 231, 0.7);
+      line-height: 1.55;
+      border-top: 1px solid rgba(255, 194, 14, 0.08);
+      padding-top: 10px;
+    }
+
+    .cinema-films strong {
+      color: var(--yellow-light);
+    }
+
+    /* ═══════════════════════════════════════════════════
+   SECTION 4: PLACES
+   ═══════════════════════════════════════════════════ */
+    #places {
+      background: linear-gradient(180deg, var(--dark) 0%, #0A080D 50%, var(--dark) 100%);
+    }
+
+    .places-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .place-card {
+      border-radius: 18px;
+      overflow: hidden;
+      background: linear-gradient(160deg, var(--dark-card-2), var(--dark-card));
+      border: 1px solid rgba(255, 194, 14, 0.08);
+      transition: transform 0.35s, box-shadow 0.35s;
+      position: relative;
+    }
+
+    .place-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 50px rgba(255, 194, 14, 0.08);
+    }
+
+    .place-illustration {
+      height: 200px;
+      position: relative;
+      overflow: hidden;
+      background: #150d10;
+    }
+
+    .place-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    .place-card:hover .place-img {
+      transform: scale(1.08);
+    }
+
+    .place-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, var(--dark-card) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .place-illustration svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .place-district-tag {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      color: var(--yellow);
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      border: 1px solid rgba(255, 194, 14, 0.25);
+      z-index: 2;
+    }
+
+    .place-body {
+      padding: 20px 22px 22px;
+    }
+
+    .place-name-kn {
+      font-family: var(--font-kn);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--yellow);
+    }
+
+    .place-name-en {
+      font-size: 0.8rem;
+      color: rgba(255, 248, 231, 0.5);
+      margin-bottom: 8px;
+    }
+
+    .place-desc {
+      font-size: 0.82rem;
+      color: rgba(255, 248, 231, 0.7);
+      line-height: 1.55;
+      margin-bottom: 10px;
+    }
+
+    .place-visit {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--yellow-light);
+      background: rgba(255, 194, 14, 0.08);
+      padding: 5px 12px;
+      border-radius: 14px;
+    }
+
+    /* ═══════════════════════════════════════════════════
+   SECTION 5: QUICK FACTS
+   ═══════════════════════════════════════════════════ */
+    #facts {
+      background: linear-gradient(180deg, var(--dark), var(--maroon-deep));
+      text-align: center;
+    }
+
+    .facts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 28px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .fact-card {
+      padding: 24px 16px 20px;
+      border-radius: 18px;
+      background: rgba(255, 194, 14, 0.04);
+      border: 1px solid rgba(255, 194, 14, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .fact-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 30px rgba(255, 194, 14, 0.12);
+    }
+
+    .fact-img-wrap {
+      width: 84px;
+      height: 84px;
+      border-radius: 18px;
+      margin: 0 auto 14px;
+      overflow: hidden;
+      position: relative;
+      padding: 2px;
+      background: linear-gradient(135deg, var(--yellow), var(--red));
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .fact-card:hover .fact-img-wrap {
+      transform: scale(1.08) translateY(-2px);
+      box-shadow: 0 8px 25px var(--yellow-glow);
+    }
+
+    .fact-img {
+      width: 100%;
+      height: 100%;
+      border-radius: 16px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .fact-icon-fallback {
+      width: 100%;
+      height: 100%;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.2rem;
+      background: var(--dark-card-2);
+    }
+
+    .fact-icon {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+    }
+
+    .fact-value {
+      font-family: var(--font-kn-display);
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--yellow);
+    }
+
+    .fact-label {
+      font-size: 0.82rem;
+      color: rgba(255, 248, 231, 0.6);
+      margin-top: 4px;
+    }
+
+    .fact-label-kn {
+      font-family: var(--font-kn);
+      font-size: 0.9rem;
+      color: rgba(255, 248, 231, 0.45);
+    }
+
+    /* ═══════════════════════════════════════════════════
+   SECTION: KARNATAKA FOOD FEST (ಕರ್ನಾಟಕದ ಅಡುಗೆ)
+   ═══════════════════════════════════════════════════ */
+    #food {
+      background: radial-gradient(ellipse at 50% 0%, rgba(255, 194, 14, 0.28) 0%, rgba(255, 112, 67, 0.22) 35%, rgba(62, 7, 18, 0.95) 75%, var(--dark) 100%), #14070a;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .banana-leaf-strip {
+      height: 18px;
+      background: repeating-linear-gradient(90deg, #1b4d1b 0px, #2e7d32 12px, #43a047 24px, #2e7d32 36px, #1b4d1b 48px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7), inset 0 1px 3px rgba(255, 255, 255, 0.3);
+      position: relative;
+      border-radius: 6px;
+      margin: 0 auto clamp(30px, 4vw, 50px);
+      max-width: 960px;
+    }
+
+    .banana-leaf-strip::after {
+      content: '🍃 🌿 🍃 🌿 🍃 🌿 🍃 🌿 🍃 🌿 🍃 🌿 🍃';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 0.7rem;
+      letter-spacing: 12px;
+      opacity: 0.65;
+      white-space: nowrap;
+    }
+
+    /* Steam Animation */
+    .steam-container {
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 8px;
+      pointer-events: none;
+      z-index: 3;
+    }
+
+    .steam-puff {
+      width: 5px;
+      height: 18px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.5);
+      filter: blur(2px);
+      animation: steamRise 2.2s ease-in-out infinite;
+    }
+
+    .steam-puff:nth-child(2) {
+      animation-delay: 0.5s;
+      height: 24px;
+      width: 8px;
+    }
+
+    .steam-puff:nth-child(3) {
+      animation-delay: 1.1s;
+      height: 16px;
+      width: 5px;
+    }
+
+    @keyframes steamRise {
+      0% {
+        transform: translateY(0) scaleX(1);
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 0.75;
+        transform: translateY(-14px) scaleX(1.5) skewX(6deg);
+      }
+
+      100% {
+        transform: translateY(-30px) scaleX(2.2) skewX(-6deg);
+        opacity: 0;
+      }
+    }
+
+    /* Filter Controls */
+    .food-filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+
+    .food-btn {
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border: 1px solid rgba(255, 194, 14, 0.3);
+      color: var(--off-white);
+      background: rgba(255, 194, 14, 0.06);
+      transition: all 0.25s;
+      cursor: pointer;
+    }
+
+    .food-btn:hover,
+    .food-btn.active {
+      background: var(--yellow);
+      color: var(--dark);
+      box-shadow: 0 0 15px var(--yellow-glow);
+      border-color: var(--yellow);
+    }
+
+    .food-veg-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 18px;
+      border-radius: 20px;
+      border: 1px solid #4CAF50;
+      color: #81C784;
+      background: rgba(76, 175, 80, 0.1);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.25s;
+    }
+
+    .food-veg-toggle.active {
+      background: #2E7D32;
+      color: #FFF;
+      box-shadow: 0 0 15px rgba(76, 175, 80, 0.4);
+    }
+
+    /* 3D Carousel / Ring Viewport & Track */
+    .food-carousel-wrapper {
+      position: relative;
+      max-width: 1260px;
+      margin: 0 auto;
+      perspective: 1200px;
+      overflow: hidden;
+      padding: 10px 0 20px;
+    }
+
+    .food-carousel-track {
+      display: flex;
+      gap: 24px;
+      padding: 24px 16px 36px;
+      cursor: grab;
+      user-select: none;
+      transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+      will-change: transform;
+    }
+
+    .food-carousel-track.dragging {
+      cursor: grabbing;
+      transition: none;
+    }
+
+    .food-carousel-track.grid-mode {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      transform: none !important;
+      cursor: default;
+    }
+
+    .food-carousel-track .food-card {
+      flex: 0 0 310px;
+      transform-style: preserve-3d;
+    }
+
+    .food-carousel-controls {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    .food-carousel-btn {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 2px solid var(--yellow);
+      color: var(--yellow);
+      background: rgba(13, 10, 11, 0.7);
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.25s;
+    }
+
+    .food-carousel-btn:hover {
+      background: var(--yellow);
+      color: var(--dark);
+      box-shadow: 0 0 16px var(--yellow-glow);
+    }
+
+    /* 3D Cards with Glowing Gold Edges */
+    .food-card {
+      background: linear-gradient(160deg, var(--dark-card-2), var(--dark-card));
+      border: 1.5px solid rgba(255, 215, 0, 0.3);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5), inset 0 0 12px rgba(255, 215, 0, 0.06);
+      border-radius: 20px;
+      padding: 24px 20px 20px;
+      position: relative;
+      cursor: pointer;
+      transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .food-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #4CAF50, var(--yellow), var(--red));
+    }
+
+    .food-card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 16px 50px rgba(255, 194, 14, 0.35), 0 0 30px rgba(255, 215, 0, 0.6), inset 0 0 18px rgba(255, 215, 0, 0.2);
+      border-color: var(--gold);
+    }
+
+    .food-card:focus-visible {
+      outline: 2px solid var(--yellow);
+      outline-offset: 4px;
+    }
+
+    .food-art-wrap {
+      width: 94px;
+      height: 94px;
+      border-radius: 50%;
+      margin: 0 auto 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle, rgba(255, 194, 14, 0.25) 0%, rgba(227, 30, 36, 0.15) 70%, transparent 100%);
+      border: 2px solid rgba(255, 194, 14, 0.35);
+      font-size: 3.2rem;
+      position: relative;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+    }
+
+    .food-card:hover .food-art-wrap {
+      transform: scale(1.08);
+      border-color: var(--yellow);
+    }
+
+    .food-veg-badge {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      width: 18px;
+      height: 18px;
+      border: 2px solid #4CAF50;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .food-veg-badge.non-veg {
+      border-color: #E53935;
+    }
+
+    .food-veg-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #4CAF50;
+    }
+
+    .food-veg-badge.non-veg .food-veg-dot {
+      background: #E53935;
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      border-radius: 0;
+    }
+
+    .food-region-badge {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      font-size: 0.68rem;
+      font-weight: 600;
+      color: var(--yellow);
+      background: rgba(0, 0, 0, 0.7);
+      padding: 3px 10px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 194, 14, 0.25);
+      backdrop-filter: blur(4px);
+    }
+
+    .food-name-kn {
+      font-family: var(--font-kn);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--yellow);
+      text-align: center;
+      margin-bottom: 2px;
+    }
+
+    .food-name-en {
+      font-family: var(--font-en);
+      font-size: 0.82rem;
+      color: rgba(255, 248, 231, 0.65);
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .food-desc {
+      font-size: 0.8rem;
+      color: rgba(255, 248, 231, 0.75);
+      line-height: 1.5;
+      text-align: center;
+      margin-bottom: 12px;
+      flex-grow: 1;
+    }
+
+    .food-ingredients-preview {
+      font-size: 0.72rem;
+      color: var(--yellow-light);
+      background: rgba(255, 194, 14, 0.08);
+      border: 1px dashed rgba(255, 194, 14, 0.25);
+      padding: 6px 10px;
+      border-radius: 10px;
+      text-align: center;
+      margin-top: auto;
+    }
+
+    /* Modal Popup & Region Map */
+    .food-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(13, 10, 11, 0.88);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      z-index: 10000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .food-modal-backdrop.open {
+      display: flex;
+      opacity: 1;
+    }
+
+    .food-modal {
+      background: linear-gradient(160deg, #251217, #15090C);
+      border: 2px solid var(--yellow);
+      border-radius: 24px;
+      max-width: 680px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      padding: 36px 30px 30px;
+      position: relative;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.85), 0 0 35px var(--yellow-glow);
+      animation: modalPop 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    }
+
+    @keyframes modalPop {
+      from {
+        transform: scale(0.9) translateY(20px);
+        opacity: 0;
+      }
+
+      to {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .modal-close-btn {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid var(--yellow);
+      color: var(--yellow);
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .modal-close-btn:hover {
+      background: var(--yellow);
+      color: var(--dark);
+    }
+
+    .modal-header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .modal-icon-large {
+      font-size: 4rem;
+      width: 85px;
+      height: 85px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 194, 14, 0.12);
+      border-radius: 50%;
+      border: 2px solid var(--yellow);
+    }
+
+    .modal-title-wrap h3 {
+      font-family: var(--font-kn-display);
+      font-size: 1.6rem;
+      color: var(--yellow);
+      margin-bottom: 4px;
+    }
+
+    .modal-title-wrap p {
+      font-size: 0.95rem;
+      color: rgba(255, 248, 231, 0.7);
+    }
+
+    .modal-section-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--yellow-light);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: 16px 0 8px;
+    }
+
+    .modal-ingredients-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .ingredient-tag {
+      background: rgba(255, 194, 14, 0.12);
+      border: 1px solid rgba(255, 194, 14, 0.25);
+      color: var(--off-white);
+      padding: 4px 12px;
+      border-radius: 14px;
+      font-size: 0.78rem;
+    }
+
+    .map-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 16px;
+      padding: 16px;
+      border: 1px solid rgba(255, 194, 14, 0.15);
+    }
+
+    .map-container svg {
+      max-width: 320px;
+      width: 100%;
+      height: auto;
+    }
+
+    .map-region-label {
+      margin-top: 10px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      color: var(--yellow);
+    }
+
+    /* Build Your Thali Mini-Game */
+    .thali-container {
+      margin-top: 60px;
+      padding: clamp(24px, 4vw, 44px) clamp(16px, 3vw, 32px);
+      background: linear-gradient(160deg, rgba(27, 77, 27, 0.25), rgba(13, 10, 11, 0.8));
+      border: 2px solid rgba(76, 175, 80, 0.35);
+      border-radius: 24px;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    .thali-heading {
+      font-family: var(--font-kn-display);
+      font-size: clamp(1.4rem, 3.5vw, 2.2rem);
+      color: #81C784;
+      margin-bottom: 8px;
+    }
+
+    .thali-sub {
+      font-size: 0.9rem;
+      color: rgba(255, 248, 231, 0.7);
+      margin-bottom: 24px;
+    }
+
+    .thali-progress-wrap {
+      max-width: 400px;
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      justify-content: center;
+    }
+
+    .thali-count-badge {
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--yellow);
+      background: rgba(0, 0, 0, 0.5);
+      padding: 4px 14px;
+      border-radius: 20px;
+      border: 1px solid var(--yellow);
+    }
+
+    .thali-leaf-area {
+      position: relative;
+      max-width: 680px;
+      min-height: 310px;
+      margin: 0 auto 24px;
+      border-radius: 40px;
+      background: transparent;
+      box-shadow: 0 16px 50px rgba(0, 0, 0, 0.7);
+      border: 2px dashed rgba(129, 199, 132, 0.45);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      gap: 14px;
+      padding: 36px 30px;
+      transition: all 0.3s;
+      overflow: hidden;
+    }
+
+    .thali-leaf-area.highlight {
+      border-color: var(--yellow);
+      box-shadow: 0 0 35px var(--yellow-glow);
+      transform: scale(1.02);
+    }
+
+    .thali-svg-leaf {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .thali-item-placed {
+      background: rgba(0, 0, 0, 0.7);
+      border: 2px solid var(--yellow);
+      border-radius: 16px;
+      padding: 6px 12px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--yellow);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      animation: itemPop 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    @keyframes itemPop {
+      0% {
+        transform: scale(0.4);
+        opacity: 0;
+      }
+
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .thali-item-placed .remove-icon {
+      font-size: 0.75rem;
+      color: #E53935;
+      margin-left: 4px;
+    }
+
+    .thali-tray-label {
+      font-size: 0.85rem;
+      color: rgba(255, 248, 231, 0.6);
+      margin-bottom: 12px;
+    }
+
+    .thali-tray {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .thali-dish-chip {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 194, 14, 0.25);
+      border-radius: 20px;
+      padding: 6px 14px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--off-white);
+      cursor: pointer;
+      transition: all 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      user-select: none;
+    }
+
+    .thali-dish-chip:hover {
+      background: var(--yellow);
+      color: var(--dark);
+      transform: translateY(-2px);
+    }
+
+    .thali-dish-chip.added {
+      opacity: 0.4;
+      cursor: not-allowed;
+      border-style: dashed;
+    }
+
+    .thali-celebration {
+      display: none;
+      background: linear-gradient(135deg, var(--gold), #FFA000);
+      color: var(--dark);
+      font-weight: 800;
+      font-size: 1.15rem;
+      padding: 14px 28px;
+      border-radius: 30px;
+      margin: 20px auto 0;
+      max-width: 500px;
+      box-shadow: 0 8px 30px rgba(255, 215, 0, 0.4);
+      animation: celebrationPulse 1.5s infinite alternate ease-in-out;
+    }
+
+    @keyframes celebrationPulse {
+      0% {
+        transform: scale(0.98);
+      }
+
+      100% {
+        transform: scale(1.02);
+        box-shadow: 0 10px 40px rgba(255, 215, 0, 0.6);
+      }
+    }
+
+    .thali-reset-btn {
+      margin-top: 16px;
+      padding: 8px 20px;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: rgba(255, 248, 231, 0.7);
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .thali-reset-btn:hover {
+      background: rgba(255, 255, 255, 0.15);
+      color: #FFF;
+    }
+
+    /* Personality Quiz: Which Karnataka dish are you? */
+    .quiz-container {
+      margin-top: 60px;
+      padding: clamp(24px, 4vw, 40px) clamp(16px, 3vw, 32px);
+      background: linear-gradient(160deg, rgba(255, 194, 14, 0.06), rgba(227, 30, 36, 0.08));
+      border: 2px solid rgba(255, 194, 14, 0.25);
+      border-radius: 24px;
+      max-width: 760px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    .quiz-title {
+      font-family: var(--font-kn-display);
+      font-size: clamp(1.4rem, 3.5vw, 2.2rem);
+      color: var(--yellow);
+      margin-bottom: 6px;
+    }
+
+    .quiz-subtitle {
+      font-size: 0.88rem;
+      color: rgba(255, 248, 231, 0.65);
+      margin-bottom: 24px;
+    }
+
+    .quiz-progress {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--yellow-light);
+      margin-bottom: 16px;
+      letter-spacing: 1px;
+    }
+
+    .quiz-question-text {
+      font-family: var(--font-kn-display);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--off-white);
+      margin-bottom: 22px;
+      line-height: 1.4;
+    }
+
+    .quiz-options-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      text-align: left;
+    }
+
+    .quiz-opt-btn {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 194, 14, 0.2);
+      border-radius: 14px;
+      padding: 14px 18px;
+      color: var(--off-white);
+      font-size: 0.92rem;
+      cursor: pointer;
+      transition: all 0.25s;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .quiz-opt-btn:hover {
+      background: rgba(255, 194, 14, 0.15);
+      border-color: var(--yellow);
+      transform: translateX(4px);
+    }
+
+    .quiz-opt-marker {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 1px solid var(--yellow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--yellow);
+      flex-shrink: 0;
+    }
+
+    .quiz-result-box {
+      display: none;
+      animation: modalPop 0.4s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    }
+
+    .quiz-result-dish-art {
+      font-size: 4.5rem;
+      margin-bottom: 12px;
+    }
+
+    .quiz-result-title {
+      font-family: var(--font-kn-display);
+      font-size: 2rem;
+      color: var(--yellow);
+      margin-bottom: 6px;
+    }
+
+    .quiz-result-desc {
+      font-size: 0.95rem;
+      color: rgba(255, 248, 231, 0.85);
+      line-height: 1.6;
+      max-width: 550px;
+      margin: 0 auto 24px;
+    }
+
+    .quiz-share-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .quiz-btn-primary {
+      background: linear-gradient(135deg, var(--yellow), #FFA000);
+      color: var(--dark);
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 10px 24px;
+      border-radius: 25px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.25s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .quiz-btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px var(--yellow-glow);
+    }
+
+    .quiz-btn-secondary {
+      background: transparent;
+      border: 1px solid var(--yellow);
+      color: var(--yellow);
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 10px 24px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.25s;
+    }
+
+    .quiz-btn-secondary:hover {
+      background: rgba(255, 194, 14, 0.1);
+    }
+
+    /* ═══════════════════════════════════════════════════
+   FOOTER
+   ═══════════════════════════════════════════════════ */
+    #footer {
+      text-align: center;
+      padding: 50px 20px 40px;
+      background: var(--maroon-deep);
+      border-top: 1px solid rgba(255, 194, 14, 0.1);
+    }
+
+    .footer-quote {
+      font-family: var(--font-kn-display);
+      font-size: clamp(1.2rem, 3vw, 1.8rem);
+      font-weight: 700;
+      color: var(--yellow);
+      margin-bottom: 12px;
+    }
+
+    .footer-sub {
+      font-size: 0.9rem;
+      color: rgba(255, 248, 231, 0.5);
+    }
+
+    .footer-sub .heart {
+      color: var(--red);
+    }
+
+    .footer-flag {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 0;
+    }
+
+    .footer-flag span {
+      display: inline-block;
+      width: 50px;
+      height: 8px;
+    }
+
+    .footer-flag .fy {
+      background: var(--yellow);
+      border-radius: 4px 0 0 4px;
+    }
+
+    .footer-flag .fr {
+      background: var(--red);
+      border-radius: 0 4px 4px 0;
+    }
+
+    /* ═══════════════════════════════════════════════════
+   FLOATING PARTICLES (parallax)
+   ═══════════════════════════════════════════════════ */
+    .parallax-particle {
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+      opacity: 0.12;
+      animation: floatParticle linear infinite;
+    }
+
+    @keyframes floatParticle {
+      0% {
+        transform: translateY(0) rotate(0deg);
+      }
+
+      100% {
+        transform: translateY(-100vh) rotate(360deg);
+      }
+    }
+
+    /* ═══════════════════════════════════════════════════
+   UTILITY
+   ═══════════════════════════════════════════════════ */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    /* ═══════════════════════════════════════════════════
+   RESPONSIVE TWEAKS
+   ═══════════════════════════════════════════════════ */
+    @media (max-width: 600px) {
+      .alpha-grid {
+        grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
+        gap: 10px;
+      }
+
+      .carousel-card {
+        flex: 0 0 280px;
+      }
+
+      .cinema-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .places-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .facts-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ═══════════════ NAVBAR ═══════════════ -->
+  <nav id="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="nav-brand" aria-label="Kannada Rajyotsava"> ⚜️ಕನ್ನಡ</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#alphabet"><span class="kn-label">ಅಕ್ಷರಮಾಲೆ</span><span class="en-label">Alphabet</span></a></li>
+      <li><a href="#poets"><span class="kn-label">ಕವಿಗಳು</span><span class="en-label">Poets</span></a></li>
+      <li><a href="#cinema"><span class="kn-label">ಚಿತ್ರರಂಗ</span><span class="en-label">Cinema</span></a></li>
+      <li><a href="#places"><span class="kn-label">ಸ್ಥಳಗಳು</span><span class="en-label">Places</span></a></li>
+      <li><a href="#food"><span class="kn-label">ಅಡುಗೆ</span><span class="en-label">Food</span></a></li>
+      <li><a href="#facts"><span class="kn-label">ಹೆಮ್ಮೆ</span><span class="en-label">Pride</span></a></li>
+    </ul>
+    <div class="nav-controls">
+      <button id="langToggle" aria-label="Toggle language between Kannada and English">EN</button>
+      <button id="menuToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════ CONFETTI CANVAS ═══════════════ -->
+  <canvas id="confetti-canvas" aria-hidden="true"></canvas>
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section id="hero" aria-label="Hero section with Karnataka flag animation">
+    <div id="hero-canvas" aria-hidden="true"></div>
+    <div class="hero-overlay" id="heroOverlay">
+      <h1 class="hero-title" data-kn="ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವದ ಶುಭಾಶಯಗಳು" data-en="Happy Kannada Rajyotsava">ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವದ
+        ಶುಭಾಶಯಗಳು</h1>
+      <p class="hero-subtitle" data-kn="ಕರ್ನಾಟಕ ರಚನಾ ದಿನ" data-en="Karnataka Formation Day">Karnataka Formation Day</p>
+      <p class="hero-date">🗓️ 1 ನವೆಂಬರ್ 1956 | 1 November 1956</p>
+    </div>
+    <div class="scroll-prompt" aria-hidden="true">
+      <span data-kn="ಅನ್ವೇಷಿಸಲು ಸ್ಕ್ರಾಲ್ ಮಾಡಿ" data-en="Scroll to explore">Scroll to explore</span>
+      <span class="arrow">↓</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SECTION 1: ALPHABET ═══════════════ -->
+  <section id="alphabet" class="section" aria-label="Kannada Alphabet">
+    <div class="section-header reveal">
+      <h2 data-kn="ಕನ್ನಡ ಅಕ್ಷರಮಾಲೆ" data-en="Kannada Alphabet">ಕನ್ನಡ ಅಕ್ಷರಮಾಲೆ</h2>
+      <p class="section-subtitle" data-kn="ಸ್ವರ ಮತ್ತು ವ್ಯಂಜನಗಳು" data-en="Vowels &amp; Consonants">Vowels &amp;
+        Consonants</p>
+      <div class="section-divider"></div>
+    </div>
+    <div class="alpha-toggle reveal">
+      <button class="active" id="btnVowels" data-kn="ಸ್ವರಗಳು" data-en="Vowels"
+        onclick="showAlphaSet('vowels')">ಸ್ವರಗಳು</button>
+      <button id="btnConsonants" data-kn="ವ್ಯಂಜನಗಳು" data-en="Consonants"
+        onclick="showAlphaSet('consonants')">ವ್ಯಂಜನಗಳು</button>
+    </div>
+    <div class="alpha-grid reveal" id="alphaGrid" role="list" aria-label="Kannada letters"></div>
+  </section>
+
+  <!-- ═══════════════ SECTION 2: POETS ═══════════════ -->
+  <section id="poets" class="section" aria-label="Famous Kannada Poets and Writers">
+    <div class="section-header reveal">
+      <h2 data-kn="ಕನ್ನಡದ ಕವಿಗಳು" data-en="Famous Kannada Poets &amp; Writers">ಕನ್ನಡದ ಕವಿಗಳು</h2>
+      <p class="section-subtitle" data-kn="ಸಾಹಿತ್ಯ ದಿಗ್ಗಜರು" data-en="Literary Legends">Literary Legends</p>
+      <div class="section-divider"></div>
+    </div>
+    <div class="carousel-container reveal">
+      <div class="carousel-track" id="poetsTrack"></div>
+      <div class="carousel-nav">
+        <button class="carousel-btn" onclick="scrollCarousel('poets', -1)" aria-label="Previous poet">◀</button>
+        <button class="carousel-btn" onclick="scrollCarousel('poets', 1)" aria-label="Next poet">▶</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SECTION 3: CINEMA ═══════════════ -->
+  <section id="cinema" class="section" aria-label="Kannada Cinema Legends">
+    <div class="section-header reveal">
+      <h2 data-kn="ಕನ್ನಡ ಚಿತ್ರರಂಗದ ತಾರೆಯರು" data-en="Kannada Cinema Legends">ಕನ್ನಡ ಚಿತ್ರರಂಗದ ತಾರೆಯರು</h2>
+      <p class="section-subtitle" data-kn="ಸಿನಿಮಾ ನಕ್ಷತ್ರಗಳು" data-en="Silver Screen Stars">Silver Screen Stars</p>
+      <div class="section-divider"></div>
+    </div>
+    <div class="cinema-grid reveal" id="cinemaGrid"></div>
+  </section>
+
+  <!-- ═══════════════ SECTION 4: PLACES ═══════════════ -->
+  <section id="places" class="section" aria-label="Famous Places of Karnataka">
+    <div class="section-header reveal">
+      <h2 data-kn="ಕರ್ನಾಟಕದ ಪ್ರಸಿದ್ಧ ಸ್ಥಳಗಳು" data-en="Famous Places of Karnataka">ಕರ್ನಾಟಕದ ಪ್ರಸಿದ್ಧ ಸ್ಥಳಗಳು</h2>
+      <p class="section-subtitle" data-kn="ನೋಡಲೇಬೇಕಾದ ತಾಣಗಳು" data-en="Must-visit Destinations">Must-visit Destinations
+      </p>
+      <div class="section-divider"></div>
+    </div>
+    <div class="places-grid reveal" id="placesGrid"></div>
+  </section>
+
+  <!-- ═══════════════ SECTION: KARNATAKA FOOD FEST ═══════════════ -->
+  <section id="food" class="section" aria-label="Karnataka Food Fest">
+    <div class="banana-leaf-strip" aria-hidden="true"></div>
+    <div class="section-header reveal">
+      <h2 data-kn="ಕರ್ನಾಟಕದ ಅಡುಗೆ – Food Fest" data-en="Karnataka Food Fest">ಕರ್ನಾಟಕದ ಅಡುಗೆ – Food Fest</h2>
+      <p class="section-subtitle" data-kn="ಪಾರಂಪರಿಕ ರುಚಿ ಮತ್ತು ಸ್ವಾದಗಳು" data-en="Traditional Flavors &amp; Delicacies">
+        Traditional Flavors &amp; Delicacies</p>
+      <div class="section-divider"></div>
+    </div>
+
+    <!-- Filter buttons & View Mode Toggle -->
+    <div class="food-filter-bar reveal" role="toolbar" aria-label="Food Categories">
+      <button class="food-btn active" data-filter="all" onclick="filterDishes('all')"><span
+          class="kn-label">ಎಲ್ಲವೂ</span><span class="en-label">All</span></button>
+      <button class="food-btn" data-filter="breakfast" onclick="filterDishes('breakfast')"><span
+          class="kn-label">ತಿಂಡಿ</span><span class="en-label">Breakfast</span></button>
+      <button class="food-btn" data-filter="main" onclick="filterDishes('main')"><span class="kn-label">ಊಟ</span><span
+          class="en-label">Main Meal</span></button>
+      <button class="food-btn" data-filter="sweets" onclick="filterDishes('sweets')"><span
+          class="kn-label">ಸಿಹಿ</span><span class="en-label">Sweets</span></button>
+      <button class="food-btn" data-filter="drinks" onclick="filterDishes('drinks')"><span
+          class="kn-label">ಪಾನೀಯ</span><span class="en-label">Drinks</span></button>
+      <button class="food-veg-toggle" id="vegOnlyToggle" onclick="toggleVegOnly()"><span class="kn-label">🌿 ಸಸ್ಯಹಾರಿ
+          ಮಾತ್ರ</span><span class="en-label">🌿 Veg Only</span></button>
+      <button class="food-btn" id="foodViewToggle" onclick="toggleFoodView()"><span class="kn-label">🎡 ಸಿಲಿಂಡರ್
+          ಕ್ಯಾರೋಸೆಲ್</span><span class="en-label">🎡 Carousel Mode</span></button>
+    </div>
+
+    <!-- 3D Carousel / Ring of Dishes (draggable & swipeable) -->
+    <div class="food-carousel-wrapper reveal" id="foodCarouselWrapper">
+      <div class="food-carousel-track" id="foodGrid" role="list" aria-label="Karnataka Dishes"></div>
+      <div class="food-carousel-controls" id="foodCarouselControls">
+        <button class="food-carousel-btn" onclick="scrollFoodCarousel(-1)" aria-label="Previous dishes">◀</button>
+        <span id="foodCarouselIndicator" style="font-size: 0.85rem; color: var(--yellow-light); font-weight: 600;">1 /
+          15</span>
+        <button class="food-carousel-btn" onclick="scrollFoodCarousel(1)" aria-label="Next dishes">▶</button>
+      </div>
+    </div>
+
+    <!-- Build Your Karnataka Thali Mini-Game -->
+    <div class="thali-container reveal" id="thaliSection">
+      <h3 class="thali-heading" data-kn="ಬಾಳೆ ಎಲೆ ಊಟ – Build Your Royal Thali" data-en="Build Your Karnataka Thali">ಬಾಳೆ
+        ಎಲೆ ಊಟ – Build Your Royal Thali</h3>
+      <p class="thali-sub"
+        data-kn="ಬಾಳೆ ಎಲೆಯ ಮೇಲೆ ಬಡಿಸಲು ಕೆಳಗಿನ ತಿನಿಸುಗಳನ್ನು ಡ್ರ್ಯಾಗ್ ಮಾಡಿ ಅಥವಾ ಕ್ಲಿಕ್ ಮಾಡಿ (ಕನಿಷ್ಠ 6 ತಿನಿಸುಗಳು)"
+        data-en="Drag or tap dishes from below onto the banana leaf to serve (add at least 6 items)">Drag or tap dishes
+        from below onto the banana leaf to serve (add at least 6 items)</p>
+
+      <div class="thali-progress-wrap">
+        <span class="thali-count-badge" id="thaliCountBadge">0 / 6 ಬಡಿಸಲಾಗಿದೆ</span>
+      </div>
+
+      <!-- Banana Leaf Area with SVG Plantain Leaf and Drag & Drop -->
+      <div class="thali-leaf-area" id="thaliLeaf" ondragover="handleThaliDragOver(event)"
+        ondragleave="handleThaliDragLeave(event)" ondrop="handleThaliDrop(event)"
+        aria-label="Banana leaf plate with served dishes">
+        <svg class="thali-svg-leaf" viewBox="0 0 700 360" preserveAspectRatio="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#144d14" />
+              <stop offset="40%" stop-color="#237823" />
+              <stop offset="70%" stop-color="#2e8530" />
+              <stop offset="100%" stop-color="#164d17" />
+            </linearGradient>
+            <linearGradient id="veinGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#66bb6a" stop-opacity="0.7" />
+              <stop offset="50%" stop-color="#a5d6a7" stop-opacity="0.95" />
+              <stop offset="100%" stop-color="#66bb6a" stop-opacity="0.7" />
+            </linearGradient>
+          </defs>
+          <!-- Leaf Blade with Natural Plantain Curve -->
+          <path
+            d="M 35 180 C 40 68, 220 26, 480 26 C 640 26, 680 115, 680 180 C 680 245, 640 334, 480 334 C 220 334, 40 292, 35 180 Z"
+            fill="url(#leafGrad)" stroke="#43a047" stroke-width="3" />
+          <!-- Central Spine / Midrib -->
+          <path d="M 30 180 Q 350 178 680 180" stroke="url(#veinGrad)" stroke-width="7" stroke-linecap="round"
+            fill="none" />
+          <!-- Fine Lateral Veins -->
+          <path
+            d="M 120 178 Q 160 120 220 58 M 200 178 Q 250 108 320 44 M 300 179 Q 360 98 440 36 M 410 179 Q 470 98 550 40 M 520 180 Q 580 108 630 63"
+            stroke="#81c784" stroke-width="1.8" stroke-opacity="0.4" fill="none" />
+          <path
+            d="M 120 182 Q 160 240 220 302 M 200 182 Q 250 252 320 316 M 300 181 Q 360 262 440 324 M 410 181 Q 470 262 550 320 M 520 180 Q 580 252 630 297"
+            stroke="#81c784" stroke-width="1.8" stroke-opacity="0.4" fill="none" />
+        </svg>
+        <div id="thaliEmptyMsg"
+          style="color: rgba(255,255,255,0.88); font-size: 0.95rem; z-index: 1; text-shadow: 0 2px 8px rgba(0,0,0,0.8);">
+          🍃 ನಿಮ್ಮ ಬಾಳೆ ಎಲೆ ಸಿದ್ಧವಾಗಿದೆ. ತಿನಿಸುಗಳನ್ನು ಇಲ್ಲಿಗೆ ಡ್ರ್ಯಾಗ್ ಮಾಡಿ ಅಥವಾ ಕ್ಲಿಕ್ ಮಾಡಿ!
+        </div>
+      </div>
+
+      <!-- Celebration Message -->
+      <div class="thali-celebration" id="thaliCelebration">
+        🎉 ಊಟ ಆಯ್ತಾ? Enjoy your meal! ಬಾಳೆ ಎಲೆಯ ಪರಿಪೂರ್ಣ ಊಟ ಸಿದ್ಧವಾಗಿದೆ!
+      </div>
+
+      <!-- Dish Picker Tray -->
+      <div class="thali-tray-label" data-kn="ಬಡಿಸಲು ತಿನಿಸನ್ನು ಡ್ರ್ಯಾಗ್ ಮಾಡಿ ಅಥವಾ ಕ್ಲಿಕ್ ಮಾಡಿ:"
+        data-en="Drag or click dish to add:">ಬಡಿಸಲು ತಿನಿಸನ್ನು ಡ್ರ್ಯಾಗ್ ಮಾಡಿ ಅಥವಾ ಕ್ಲಿಕ್ ಮಾಡಿ:</div>
+      <div class="thali-tray" id="thaliTray"></div>
+      <button class="thali-reset-btn" onclick="resetThali()"><span class="kn-label">🔄 ಎಲೆ ಬದಲಿಸಿ (Reset)</span><span
+          class="en-label">🔄 Reset Leaf</span></button>
+    </div>
+
+    <!-- Personality Quiz -->
+    <div class="quiz-container reveal" id="quizSection">
+      <h3 class="quiz-title" data-kn="ನೀವು ಯಾವ ಕರ್ನಾಟಕದ ಅಡುಗೆ? – Personality Quiz"
+        data-en="Which Karnataka Dish Are You?">ನೀವು ಯಾವ ಕರ್ನಾಟಕದ ಅಡುಗೆ? – Personality Quiz</h3>
+      <p class="quiz-subtitle"
+        data-kn="5 ಸರಳ ಪ್ರಶ್ನೆಗಳಿಗೆ ಉತ್ತರಿಸಿ, ನಿಮ್ಮ ವ್ಯಕ್ತಿತ್ವಕ್ಕೆ ಸರಿಹೊಂದುವ ಕರ್ನಾಟಕದ ತಿನಿಸನ್ನು ತಿಳಿಯಿರಿ!"
+        data-en="Answer 5 short questions to discover your Karnataka foodie personality match!">Answer 5 short questions
+        to discover your Karnataka foodie personality match!</p>
+
+      <div id="quizBox">
+        <div class="quiz-progress" id="quizProgress">ಪ್ರಶ್ನೆ 1 / 5</div>
+        <div class="quiz-question-text" id="quizQuestion">ಪ್ರಶ್ನೆ ಲೋಡ್ ಆಗುತ್ತಿದೆ...</div>
+        <div class="quiz-options-list" id="quizOptions"></div>
+      </div>
+
+      <div class="quiz-result-box" id="quizResult">
+        <div class="quiz-result-dish-art" id="resultDishArt">🥞</div>
+        <div class="quiz-result-title" id="resultDishTitle">ದಾವಣಗೆರೆ ಬೆಣ್ಣೆ ದೋಸೆ</div>
+        <p class="quiz-result-desc" id="resultDishDesc">ವಿವರಣೆ...</p>
+        <div class="quiz-share-actions">
+          <button class="quiz-btn-primary" onclick="downloadQuizCard()"><span class="kn-label">📥 ಫಲಿತಾಂಶ ಕಾರ್ಡ್
+              ಡೌನ್‌ಲೋಡ್ (PNG)</span><span class="en-label">📥 Download Card (PNG)</span></button>
+          <button class="quiz-btn-secondary" onclick="restartQuiz()"><span class="kn-label">🔄 ಮರುಪ್ರಶ್ನಾವಳಿ
+              (Retake)</span><span class="en-label">🔄 Retake Quiz</span></button>
+        </div>
+        <!-- Hidden canvas for generating result card image -->
+        <canvas id="quizCanvas" width="900" height="600" style="display:none;"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dish Details Modal -->
+  <div class="food-modal-backdrop" id="foodModal" role="dialog" aria-modal="true" aria-labelledby="modalDishName"
+    onclick="handleModalBackdropClick(event)">
+    <div class="food-modal" onclick="event.stopPropagation()">
+      <button class="modal-close-btn" onclick="closeFoodModal()" aria-label="Close modal">✕</button>
+      <div class="modal-header">
+        <div class="modal-icon-large" id="modalDishIcon">🍲</div>
+        <div class="modal-title-wrap">
+          <h3 id="modalDishName">ಬಿಸಿ ಬೇಳೆ ಬಾತ್</h3>
+          <p id="modalDishEn">Bisi Bele Bath</p>
+          <span class="ingredient-tag" id="modalCategoryTag" style="margin-top:6px; display:inline-block;">ಊಟ</span>
+        </div>
+      </div>
+
+      <div class="modal-section-title" data-kn="ವಿವರಣೆ / Description" data-en="Description">ವಿವರಣೆ / Description</div>
+      <p id="modalDishDesc"
+        style="font-size: 0.95rem; line-height: 1.6; color: rgba(255,248,231,0.85); margin-bottom: 16px;"></p>
+
+      <div class="modal-section-title" data-kn="ಮುಖ್ಯ ಪದಾರ್ಥಗಳು / Key Ingredients" data-en="Key Ingredients">ಮುಖ್ಯ
+        ಪದಾರ್ಥಗಳು / Key Ingredients</div>
+      <div class="modal-ingredients-tags" id="modalIngredients"></div>
+
+      <div class="modal-section-title" data-kn="ಪ್ರಸಿದ್ಧ ಪ್ರಾಂತ್ಯ / Origin Region in Karnataka"
+        data-en="Origin Region in Karnataka">ಪ್ರಸಿದ್ಧ ಪ್ರಾಂತ್ಯ / Origin Region in Karnataka</div>
+      <div class="map-container">
+        <div id="modalRegionSvgContainer"></div>
+        <div class="map-region-label" id="modalRegionName">📍 ಮೈಸೂರು / ದಕ್ಷಿಣ ಕರ್ನಾಟಕ</div>
+      </div>
+    </div>
+  </div>
+  <section id="facts" class="section" aria-label="Karnataka Quick Facts">
+    <div class="section-header reveal">
+      <h2 data-kn="ಕರ್ನಾಟಕ ಹೆಮ್ಮೆ" data-en="Karnataka Pride – Quick Facts">ಕರ್ನಾಟಕ ಹೆಮ್ಮೆ</h2>
+      <p class="section-subtitle" data-kn="ನಮ್ಮ ರಾಜ್ಯದ ವಿಶೇಷಗಳು" data-en="Our State in Numbers">Our State in Numbers</p>
+      <div class="section-divider"></div>
+    </div>
+    <div class="facts-grid reveal" id="factsGrid"></div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer id="footer">
+    <p class="footer-quote" data-kn="ಕನ್ನಡವೇ ಸತ್ಯ, ಕನ್ನಡವೇ ನಿತ್ಯ" data-en="Kannada is truth, Kannada is eternal">ಕನ್ನಡವೇ
+      ಸತ್ಯ, ಕನ್ನಡವೇ ನಿತ್ಯ</p>
+    <p class="footer-sub" data-kn="ಕರ್ನಾಟಕಕ್ಕಾಗಿ ❤️ ಇಂದ ರಚಿಸಲಾಗಿದೆ" data-en="Made with ❤️ for Karnataka">Made with <span
+        class="heart">❤️</span> for Karnataka</p>
+    <div class="footer-flag" aria-hidden="true"><span class="fy"></span><span class="fr"></span></div>
+  </footer>
+
+  <!-- ═══════════════ THREE.JS CDN ═══════════════ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <script>
+    /* ═══════════════════════════════════════════════════════════════
+       DATA ARRAYS — Edit these to change content
+       ═══════════════════════════════════════════════════════════════ */
+
+    // ─── Karnataka Food Fest (ಕರ್ನಾಟಕದ ಅಡುಗೆ) — Edit Dishes Here ───
+    const DISHES = [
+      {
+        id: 'bisi_bele_bath',
+        nameKn: 'ಬಿಸಿ ಬೇಳೆ ಬಾತ್',
+        nameEn: 'Bisi Bele Bath',
+        category: 'main',
+        isVeg: true,
+        regionKn: 'ಮೈಸೂರು / ದಕ್ಷಿಣ ಕರ್ನಾಟಕ',
+        regionEn: 'Old Mysore / South Karnataka',
+        regionKey: 'mysore',
+        descKn: 'ಅಕ್ಕಿ, ತೊಗರಿಬೇಳೆ, ತರಕಾರಿಗಳು ಹಾಗೂ ನವಿರಾದ ಮಸಾಲೆ ಪುಡಿ ಬೆರೆಸಿ ತುಪ್ಪದಲ್ಲಿ ಘಮಘಮಿಸುವ ಸಾಂಪ್ರದಾಯಿಕ ಸವಿ ಊಟ.',
+        descEn: 'Hot, spicy, and comforting rice-and-lentil meal cooked with vegetables, tamarind, and aromatic spice blend.',
+        ingredientsKn: ['ಅಕ್ಕಿ', 'ತೊಗರಿ ಬೇಳೆ', 'ತರಕಾರಿಗಳು', 'ಹುಣಸೆಹಣ್ಣು', 'ಬಿಸಿಬೇಳೆಬಾತ್ ಮಸಾಲೆ', 'ಶುದ್ಧ ತುಪ್ಪ', 'ಗೋಡಂಬಿ'],
+        ingredientsEn: ['Rice', 'Toor Dal', 'Mixed Vegetables', 'Tamarind', 'Bisi Bele Bath Powder', 'Ghee', 'Cashews'],
+        emoji: '🍲'
+      },
+      {
+        id: 'masala_dosa',
+        nameKn: 'ಮಸಾಲೆ ದೋಸೆ',
+        nameEn: 'Masala Dosa',
+        category: 'breakfast',
+        isVeg: true,
+        regionKn: 'ಬೆಂಗಳೂರು / ಮೈಸೂರು',
+        regionEn: 'Bengaluru / Mysuru',
+        regionKey: 'bengaluru',
+        descKn: 'ಹೊರಗಡೆ ಸುವರ್ಣ ಗರಿಗರಿ, ಒಳಗಡೆ ಬೆಣ್ಣೆಯಂತೆ ಮೃದುವಾದ ಆಲೂಗೆಡ್ಡೆ ಪಲ್ಯ ಹೊತ್ತ ಜಾಗತಿಕ ಪ್ರಸಿದ್ಧ ದೋಸೆ.',
+        descEn: 'Crispy golden fermented crepe roasted with butter, stuffed with fragrant potato mash and served with chutney.',
+        ingredientsKn: ['ಅಕ್ಕಿ', 'ಉದ್ದಿನ ಬೇಳೆ', 'ಆಲೂಗೆಡ್ಡೆ', 'ಕೆಂಪು ಚಟ್ನಿ', 'ಬೆಣ್ಣೆ', 'ಕರಿಬೇವು'],
+        ingredientsEn: ['Rice', 'Urad Dal', 'Spiced Potatoes', 'Red Garlic Chutney', 'Butter', 'Curry Leaves'],
+        emoji: '🥞'
+      },
+      {
+        id: 'mysore_pak',
+        nameKn: 'ಮೈಸೂರು ಪಾಕ್',
+        nameEn: 'Mysore Pak',
+        category: 'sweets',
+        isVeg: true,
+        regionKn: 'ಮೈಸೂರು ಅರಮನೆ',
+        regionEn: 'Mysuru Royal Palace',
+        regionKey: 'mysore',
+        descKn: 'ಕಡಲೆಹಿಟ್ಟು ಮತ್ತು ಶುದ್ಧ ದೇಶಿ ತುಪ್ಪದ ಸಮ್ಮಿಲನದಲ್ಲಿ ಬಾಯಲ್ಲಿ ಕರಗುವ ಮೈಸೂರು ಒಡೆಯರ್ ಸಂಸ್ಥಾನದ ರಾಜಶಾಹಿ ಸಿಹಿ.',
+        descEn: 'Legendary melt-in-the-mouth royal dessert made with gram flour, generous pure desi ghee, and sugar.',
+        ingredientsKn: ['ಕಡಲೆ ಹಿಟ್ಟು', 'ಶುದ್ಧ ತುಪ್ಪ', 'ಸಕ್ಕರೆ', 'ಏಲಕ್ಕಿ'],
+        ingredientsEn: ['Besan (Gram Flour)', 'Pure Desi Ghee', 'Sugar', 'Cardamom'],
+        emoji: '🧈'
+      },
+      {
+        id: 'ragi_mudde',
+        nameKn: 'ರಾಗಿ ಮುದ್ದೆ & ಸಾರು',
+        nameEn: 'Ragi Mudde with Saaru',
+        category: 'main',
+        isVeg: true,
+        regionKn: 'ಮಂಡ್ಯ / ಹಾಸನ / ಹಳೆ ಮೈಸೂರು',
+        regionEn: 'Mandya / Hassan / South Karnataka',
+        regionKey: 'mandya',
+        descKn: 'ಪೌಷ್ಟಿಕಾಂಶಗಳ ಗಣಿ, ಕರ್ನಾಟಕದ ರೈತರ ಶಕ್ತಿಯ ಸಂಕೇತ, ಬಿಸಿ ಬಿಸಿ ಬಸ್ಸಾರು ಅಥವಾ ಸೊಪ್ಪಿನ ಸಾರಿನೊಂದಿಗೆ ಸವಿಯುವ ಮುದ್ದೆ.',
+        descEn: 'Nutritious steamed finger-millet spheres packed with calcium and stamina, relished with piping hot spicy saaru.',
+        ingredientsKn: ['ರಾಗಿ ಹಿಟ್ಟು', 'ನೀರು', 'ಉಪ್ಪು', 'ಬಸ್ಸಾರು / ಸೊಪ್ಪಿನ ಸಾರು', 'ಕಾಳುಗಳು'],
+        ingredientsEn: ['Ragi Flour', 'Water', 'Salt', 'Greens & Lentil Broth (Bassaru)', 'Sprouted Pulses'],
+        emoji: '🟤'
+      },
+      {
+        id: 'jolada_rotti',
+        nameKn: 'ಜೋಳದ ರೊಟ್ಟಿ & ಎಣ್ಣೆಗಾಯಿ',
+        nameEn: 'Jolada Rotti with Ennegayi',
+        category: 'main',
+        isVeg: true,
+        regionKn: 'ಉತ್ತರ ಕರ್ನಾಟಕ (ಹುಬ್ಬಳ್ಳಿ / ಧಾರವಾಡ / ಕಲಬುರಗಿ)',
+        regionEn: 'North Karnataka (Hubballi / Dharwad / Kalaburagi)',
+        regionKey: 'north_karnataka',
+        descKn: 'ಕೈಯಲ್ಲೇ ತಟ್ಟಿದ ಮೃದುವಾದ ಬಿಳಿ ಜೋಳದ ರೊಟ್ಟಿ, ಮಸಾಲೆ ತುಂಬಿದ ಬದನೆಕಾಯಿ ಪಲ್ಯ ಹಾಗೂ ಖಾರದ ಶೇಂಗಾ ಚಟ್ನಿ ಪುಡಿ.',
+        descEn: 'Hand-patted unleavened sorghum flatbread paired with fiery spiced stuffed baby eggplant and peanut powder.',
+        ingredientsKn: ['ಬಿಳಿ ಜೋಳದ ಹಿಟ್ಟು', 'ಎಳೆ ಬದನೆಕಾಯಿ', 'ಶೇಂಗಾ', 'ಗುರೆಳ್ಳು', 'ಬ್ಯಾಡಗಿ ಮೆಣಸಿನಕಾಯಿ', 'ಬೆಳ್ಳುಳ್ಳಿ'],
+        ingredientsEn: ['Jowar Flour', 'Baby Eggplant', 'Peanuts', 'Niger Seeds (Gurellu)', 'Byadgi Chillies', 'Garlic'],
+        emoji: '🫓'
+      },
+      {
+        id: 'neer_dose',
+        nameKn: 'ನೀರು ದೋಸೆ',
+        nameEn: 'Neer Dose',
+        category: 'breakfast',
+        isVeg: true,
+        regionKn: 'ಕರಾವಳಿ (ಮಂಗಳೂರು / ಉಡುಪಿ)',
+        regionEn: 'Coastal Karnataka (Mangaluru / Udupi)',
+        regionKey: 'coastal',
+        descKn: 'ಹಾಲಿನಂತಹ ಮೃದು, ತೆಳುವಾದ ಬಾಯಲ್ಲಿಟ್ಟರೆ ಕರಗುವ ಅಕ್ಕಿ ಹಿಟ್ಟಿನ ಕರಾವಳಿಯ ನಯವಾದ ದೋಸೆ.',
+        descEn: 'Delicate, feather-light, lace-like crepes made from finely ground watery rice batter that melt in your mouth.',
+        ingredientsKn: ['ಅಕ್ಕಿ', 'ತೆಂಗಿನಕಾಯಿ ತುರಿ', 'ನೀರು', 'ಉಪ್ಪು'],
+        ingredientsEn: ['Soaked Rice', 'Fresh Grated Coconut', 'Water', 'Salt'],
+        emoji: '📜'
+      },
+      {
+        id: 'kori_rotti',
+        nameKn: 'ಕೋರಿ ರೊಟ್ಟಿ',
+        nameEn: 'Kori Rotti',
+        category: 'main',
+        isVeg: false,
+        regionKn: 'ಕರಾವಳಿ / ತುಳುನಾಡು',
+        regionEn: 'Tulu Nadu / Mangaluru',
+        regionKey: 'coastal',
+        descKn: 'ಗರಿಗರಿಯಾದ ಒಣ ಅಕ್ಕಿ ರೊಟ್ಟಿಯ ಮೇಲೆ ಮಂಗಳೂರಿನ ಘಮಘಮಿಸುವ ನಾಟಿ ಕೋಳಿ ಸಾರನ್ನು ಹೊಯ್ದು ಸವಿಯುವ ಖಾದ್ಯ.',
+        descEn: 'Crisp dry rice wafers served drenched in spicy, aromatic Mangalorean coastal chicken gravy.',
+        ingredientsKn: ['ಕುಂದಾಪುರ ಅಕ್ಕಿ ರೊಟ್ಟಿ', 'ನಾಟಿ ಕೋಳಿ ಮಾಂಸ', 'ತೆಂಗಿನ ಹಾಲು', 'ಹುರಿದ ಮಸಾಲೆ', 'ಬ್ಯಾಡಗಿ ಮೆಣಸು'],
+        ingredientsEn: ['Crisp Rice Flakes', 'Chicken', 'Coconut Milk', 'Roasted Spices', 'Byadgi Chillies'],
+        emoji: '🍗'
+      },
+      {
+        id: 'dharwad_pedha',
+        nameKn: 'ಧಾರವಾಡ ಪೇಡ',
+        nameEn: 'Dharwad Pedha',
+        category: 'sweets',
+        isVeg: true,
+        regionKn: 'ಧಾರವಾಡ',
+        regionEn: 'Dharwad',
+        regionKey: 'north_karnataka',
+        descKn: 'ಧಾರವಾಡದ ಹೆಮ್ಮೆಯ ಜಿಐ-ಟ್ಯಾಗ್ ಸಿಹಿ! ಗಟ್ಟಿಯಾದ ಎಮ್ಮೆಯ ಹಾಲಿನ ಖೋವಾವನ್ನು ಹುರಿದು ಸಕ್ಕರೆ ಬೆರೆಸಿ ಮಾಡಿದ ವಿಶಿಷ್ಟ ಸವಿ.',
+        descEn: 'World-famous GI-tagged caramelized milk fudge originating from Dharwad, dusted in caster sugar.',
+        ingredientsKn: ['ಧಾರವಾಡ ಎಮ್ಮೆ ಹಾಲು', 'ಖೋವಾ', 'ಸಕ್ಕರೆ', 'ಶುದ್ಧ ತುಪ್ಪ'],
+        ingredientsEn: ['Dharwad Buffalo Milk', 'Reduced Mawa', 'Sugar', 'Pure Ghee'],
+        emoji: '🍬'
+      },
+      {
+        id: 'maddur_vada',
+        nameKn: 'ಮದ್ದೂರು ವಡೆ',
+        nameEn: 'Maddur Vada',
+        category: 'breakfast',
+        isVeg: true,
+        regionKn: 'ಮದ್ದೂರು (ಮಂಡ್ಯ)',
+        regionEn: 'Maddur (Mandya district)',
+        regionKey: 'mandya',
+        descKn: 'ರೈಲ್ವೆ ನಿಲ್ದಾಣದಲ್ಲಿ ಹುಟ್ಟಿ ಜಗತ್ಪ್ರಸಿದ್ಧವಾದ, ಈರುಳ್ಳಿ ಮತ್ತು ರವೆ ಬೆರೆಸಿ ಗರಿಗರಿಯಾಗಿ ಕರಿದ ರುಚಿಕರ ಸಂಜೆಯ ತಿಂಡಿ.',
+        descEn: 'Iconic crunchy onion-and-semolina fritter born at the historic Maddur railway station, crisp and aromatic.',
+        ingredientsKn: ['ಅಕ್ಕಿ ಹಿಟ್ಟು', 'ಚಿರೋಟಿ ರವೆ', 'ಈರುಳ್ಳಿ', 'ಹಸಿ ಮೆಣಸಿನಕಾಯಿ', 'ಕರಿಬೇವು', 'ಹಿಂಗು'],
+        ingredientsEn: ['Rice Flour', 'Semolina (Rava)', 'Sliced Onions', 'Green Chillies', 'Curry Leaves', 'Asafoetida'],
+        emoji: '🧆'
+      },
+      {
+        id: 'benne_dose',
+        nameKn: 'ದಾವಣಗೆರೆ ಬೆಣ್ಣೆ ದೋಸೆ',
+        nameEn: 'Davanagere Benne Dose',
+        category: 'breakfast',
+        isVeg: true,
+        regionKn: 'ದಾವಣಗೆರೆ',
+        regionEn: 'Davanagere',
+        regionKey: 'central_karnataka',
+        descKn: 'ಹೆಂಚಿನ ಮೇಲೆ ತಾಜಾ ಬೆಣ್ಣೆಯ ಸುವಾಸನೆ ಬೀರುತ್ತಾ ಹೊಂಬಣ್ಣಕ್ಕೆ ಹುರಿದ ದಾವಣಗೆರೆಯ ಅದ್ಭುತ ಗರಿಗರಿ ದೋಸೆ.',
+        descEn: 'Thick, spongy, golden-crusted dosa generously roasted in churned white butter, served with potato mash and coconut chutney.',
+        ingredientsKn: ['ಅಕ್ಕಿ', 'ಅವಲಕ್ಕಿ', 'ತಾಜಾ ಬಿಳಿ ಬೆಣ್ಣೆ', 'ಆಲೂಗೆಡ್ಡೆ ಪಲ್ಯ', 'ತೆಂಗಿನ ಚಟ್ನಿ'],
+        ingredientsEn: ['Rice', 'Flattened Rice (Poha)', 'Fresh White Butter (Benne)', 'Potato Palya', 'Coconut Chutney'],
+        emoji: '🥞'
+      },
+      {
+        id: 'mysore_masala_dosa',
+        nameKn: 'ಮೈಸೂರು ಮಸಾಲ ದೋಸೆ',
+        nameEn: 'Mysore Masala Dosa',
+        category: 'breakfast',
+        isVeg: true,
+        regionKn: 'ಮೈಸೂರು',
+        regionEn: 'Mysuru',
+        regionKey: 'mysore',
+        descKn: 'ದೋಸೆಯ ಒಳಗೆ ಹಚ್ಚುವ ಘಾಟಾದ ಕೆಂಪು ಮೆಣಸಿನಕಾಯಿ-ಬೆಳ್ಳುಳ್ಳಿ ಚಟ್ನಿ ಹಾಗೂ ಗರಿಗರಿ ಕೆಂಪು ಮೈಬಣ್ಣದ ರಾಜ ಗತ್ತು.',
+        descEn: 'Smothered inside with spicy red chilli-garlic chutney, crispy on the outside with a tender buttery bite.',
+        ingredientsKn: ['ಅಕ್ಕಿ-ಉದ್ದಿನ ಹಿಟ್ಟು', 'ಕೆಂಪು ಬೆಳ್ಳುಳ್ಳಿ ಚಟ್ನಿ', 'ಆಲೂಗೆಡ್ಡೆ', 'ಬೆಣ್ಣೆ'],
+        ingredientsEn: ['Dosa Batter', 'Red Garlic-Chilli Paste', 'Spiced Potatoes', 'Ghee/Butter'],
+        emoji: '🌶️'
+      },
+      {
+        id: 'akki_rotti',
+        nameKn: 'ಅಕ್ಕಿ ರೊಟ್ಟಿ',
+        nameEn: 'Akki Rotti',
+        category: 'breakfast',
+        isVeg: true,
+        regionKn: 'ಮಲೆನಾಡು & ಗ್ರಾಮೀಣ ಕರ್ನಾಟಕ',
+        regionEn: 'Malenadu & Rural Karnataka',
+        regionKey: 'malenadu',
+        descKn: 'ಸಬ್ಬಸಿಗೆ ಸೊಪ್ಪು, ಈರುಳ್ಳಿ, ಜೀರಿಗೆ ಮತ್ತು ಕ್ಯಾರೆಟ್ ಬೆರೆಸಿ ಹೆಂಚಿನ ಮೇಲೆ ಕೈಯಲ್ಲೇ ತಟ್ಟುವ ಅಪ್ಪಟ ಕರುನಾಡ ಗೃಹ ಖಾದ್ಯ.',
+        descEn: 'Traditional rice-flour flatbread mixed with dill leaves (sabsige), onions, cumin, and hand-flattened onto hot griddles.',
+        ingredientsKn: ['ಅಕ್ಕಿ ಹಿಟ್ಟು', 'ಸಬ್ಬಸಿಗೆ ಸೊಪ್ಪು', 'ಈರುಳ್ಳಿ', 'ಜೀರಿಗೆ', 'ಕ್ಯಾರೆಟ್', 'ಹಸಿಮೆಣಸು'],
+        ingredientsEn: ['Rice Flour', 'Dill Leaves', 'Chopped Onions', 'Cumin Seeds', 'Grated Carrot', 'Chillies'],
+        emoji: '🫓'
+      },
+      {
+        id: 'obbattu',
+        nameKn: 'ಒಬ್ಬಟ್ಟು (ಹೋಳಿಗೆ)',
+        nameEn: 'Obbattu (Holige)',
+        category: 'sweets',
+        isVeg: true,
+        regionKn: 'ಕರ್ನಾಟಕದೆಲ್ಲೆಡೆ (ಹಬ್ಬದ ಸಿಹಿ)',
+        regionEn: 'Across Karnataka (Festive Delicacy)',
+        regionKey: 'statewide',
+        descKn: 'ಬೇಳೆ ಮತ್ತು ಸಾವಯವ ಬೆಲ್ಲದ ಹೂರಣ ತುಂಬಿದ, ತುಪ್ಪದೊಂದಿಗೆ ಸವಿಯುವ ಕರ್ನಾಟಕದ ಹಬ್ಬ ಹರಿದಿನಗಳ ರಾಜ ಸಿಹಿ.',
+        descEn: 'Festive sweet flatbread stuffed with lentil-jaggery (Bele) or coconut-jaggery filling, bathed in pure ghee.',
+        ingredientsKn: ['ಕಡಲೆ ಬೇಳೆ', 'ಬೆಲ್ಲ', 'ಮೈದಾ / ಚಿರೋಟಿ ರವೆ', 'ಏಲಕ್ಕಿ', 'ತುಪ್ಪ'],
+        ingredientsEn: ['Chana Dal', 'Jaggery', 'Flour/Semolina dough', 'Cardamom', 'Pure Ghee'],
+        emoji: '🍯'
+      },
+      {
+        id: 'kesari_bath',
+        nameKn: 'ಕೇಸರಿ ಬಾತ್',
+        nameEn: 'Kesari Bath',
+        category: 'sweets',
+        isVeg: true,
+        regionKn: 'ಕರ್ನಾಟಕದೆಲ್ಲೆಡೆ (ಚೌ ಚೌ ಬಾತ್)',
+        regionEn: 'Across Karnataka',
+        regionKey: 'statewide',
+        descKn: 'ಕೇಸರಿ ದಳಗಳು, ತುಪ್ಪದಲ್ಲಿ ಹುರಿದ ಗೋಡಂಬಿ-ದ್ರಾಕ್ಷಿ ಹೊತ್ತ ಸುವರ್ಣ ವರ್ಣದ ರವೆಯ ಸಿಹಿ, ಖಾರಾ ಬಾತ್‌ನ ಸವಿಯಾದ ಜೊತೆಗಾರ.',
+        descEn: 'Radiant golden saffron semolina pudding enriched with ghee-roasted cashews and raisins, paired in Chow Chow Bath.',
+        ingredientsKn: ['ಚಿರೋಟಿ ರವೆ', 'ಶುದ್ಧ ತುಪ್ಪ', 'ಸಕ್ಕರೆ', 'ಕೇಸರಿ', 'ಗೋಡಂಬಿ-ದ್ರಾಕ್ಷಿ'],
+        ingredientsEn: ['Semolina (Rava)', 'Pure Ghee', 'Sugar', 'Saffron Strands', 'Cashews & Raisins'],
+        emoji: '🍮'
+      },
+      {
+        id: 'filter_coffee',
+        nameKn: 'ಫಿಲ್ಟರ್ ಕಾಫಿ',
+        nameEn: 'Filter Coffee',
+        category: 'drinks',
+        isVeg: true,
+        regionKn: 'ಚಿಕ್ಕಮಗಳೂರು / ಮಡಿಕೇರಿ / ಬೆಂಗಳೂರು',
+        regionEn: 'Chikkamagaluru / Kodagu / Bengaluru',
+        regionKey: 'malenadu',
+        descKn: 'ಪಶ್ಚಿಮ ಘಟ್ಟಗಳ ಅಪ್ಪಟ ಕಾಫಿ ಬೀಜಗಳಿಂದ ಹಿಂಡಿದ ದಟ್ಟ ಡಿಕಾಕ್ಷನ್ ಮತ್ತು ನೊರೆಹಾಲು ಬೆರೆಸಿದ ಸಾಂಪ್ರದಾಯಿಕ ಲೋಟ-ತಟ್ಟೆಯ ಕಾಫಿ.',
+        descEn: 'Strong decoction brewed from freshly roasted Western Ghats beans, poured frothy in traditional brass dabarah.',
+        ingredientsKn: ['ತಾಜಾ ಹುರಿದ ಕಾಫಿ ಪುಡಿ', 'ಚಿಕೋರಿ', 'ನೊರೆ ಹಾಲು', 'ಸಕ್ಕರೆ'],
+        ingredientsEn: ['Freshly Ground Arabica/Robusta Coffee', 'Chicory', 'Frothy Boiled Milk', 'Sugar'],
+        emoji: '☕'
+      }
+    ];
+
+    // ─── Vowels (ಸ್ವರಗಳು) ───
+    const VOWELS = [
+      { letter: 'ಅ', translit: 'a', example: 'ಅಮ್ಮ', meaning: 'Amma (Mother)' },
+      { letter: 'ಆ', translit: 'aa', example: 'ಆನೆ', meaning: 'Aane (Elephant)' },
+      { letter: 'ಇ', translit: 'i', example: 'ಇಲಿ', meaning: 'Ili (Mouse)' },
+      { letter: 'ಈ', translit: 'ee', example: 'ಈರುಳ್ಳಿ', meaning: 'Eerulli (Onion)' },
+      { letter: 'ಉ', translit: 'u', example: 'ಉಪ್ಪು', meaning: 'Uppu (Salt)' },
+      { letter: 'ಊ', translit: 'oo', example: 'ಊಟ', meaning: 'Oota (Meal)' },
+      { letter: 'ಋ', translit: 'ru', example: 'ಋಷಿ', meaning: 'Rushi (Sage)' },
+      { letter: 'ಎ', translit: 'e', example: 'ಎಲೆ', meaning: 'Ele (Leaf)' },
+      { letter: 'ಏ', translit: 'ae', example: 'ಏಣಿ', meaning: 'Eni (Ladder)' },
+      { letter: 'ಐ', translit: 'ai', example: 'ಐದು', meaning: 'Aidu (Five)' },
+      { letter: 'ಒ', translit: 'o', example: 'ಒಂಟೆ', meaning: 'Onte (Camel)' },
+      { letter: 'ಓ', translit: 'oa', example: 'ಓದು', meaning: 'Odu (Read)' },
+      { letter: 'ಔ', translit: 'au', example: 'ಔಷಧ', meaning: 'Aushadha (Medicine)' },
+      { letter: 'ಅಂ', translit: 'am', example: 'ಅಂಗಡಿ', meaning: 'Angadi (Shop)' },
+      { letter: 'ಅಃ', translit: 'aha', example: 'ದುಃಖ', meaning: 'Duhkha (Sorrow)' }
+    ];
+
+    // ─── Consonants (ವ್ಯಂಜನಗಳು) ───
+    const CONSONANTS = [
+      { letter: 'ಕ', translit: 'ka', example: 'ಕಮಲ', meaning: 'Kamala (Lotus)' },
+      { letter: 'ಖ', translit: 'kha', example: 'ಖಡ್ಗ', meaning: 'Khadga (Sword)' },
+      { letter: 'ಗ', translit: 'ga', example: 'ಗಣೇಶ', meaning: 'Ganesha' },
+      { letter: 'ಘ', translit: 'gha', example: 'ಘಂಟೆ', meaning: 'Ghante (Bell)' },
+      { letter: 'ಙ', translit: 'nga', example: 'ಅಂಗ', meaning: 'Anga (Body)' },
+      { letter: 'ಚ', translit: 'cha', example: 'ಚಂದ್ರ', meaning: 'Chandra (Moon)' },
+      { letter: 'ಛ', translit: 'chha', example: 'ಛತ್ರಿ', meaning: 'Chhatri (Umbrella)' },
+      { letter: 'ಜ', translit: 'ja', example: 'ಜಲ', meaning: 'Jala (Water)' },
+      { letter: 'ಝ', translit: 'jha', example: 'ಝರಿ', meaning: 'Jhari (Stream)' },
+      { letter: 'ಞ', translit: 'nya', example: 'ಜ್ಞಾನ', meaning: 'Jnyana (Knowledge)' },
+      { letter: 'ಟ', translit: 'ta', example: 'ಟೊಪ್ಪಿ', meaning: 'Toppi (Cap)' },
+      { letter: 'ಠ', translit: 'tha', example: 'ಕಠಿಣ', meaning: 'Kathina (Hard)' },
+      { letter: 'ಡ', translit: 'da', example: 'ಡಮರು', meaning: 'Damaru (Drum)' },
+      { letter: 'ಢ', translit: 'dha', example: 'ಢಾಲು', meaning: 'Dhaalu (Shield)' },
+      { letter: 'ಣ', translit: 'na', example: 'ಗುಣ', meaning: 'Guna (Quality)' },
+      { letter: 'ತ', translit: 'ta', example: 'ತಾಯಿ', meaning: 'Taayi (Mother)' },
+      { letter: 'ಥ', translit: 'tha', example: 'ರಥ', meaning: 'Ratha (Chariot)' },
+      { letter: 'ದ', translit: 'da', example: 'ದೀಪ', meaning: 'Deepa (Lamp)' },
+      { letter: 'ಧ', translit: 'dha', example: 'ಧನ', meaning: 'Dhana (Wealth)' },
+      { letter: 'ನ', translit: 'na', example: 'ನದಿ', meaning: 'Nadi (River)' },
+      { letter: 'ಪ', translit: 'pa', example: 'ಪುಸ್ತಕ', meaning: 'Pustaka (Book)' },
+      { letter: 'ಫ', translit: 'pha', example: 'ಫಲ', meaning: 'Phala (Fruit)' },
+      { letter: 'ಬ', translit: 'ba', example: 'ಬಾಗಿಲು', meaning: 'Baagilu (Door)' },
+      { letter: 'ಭ', translit: 'bha', example: 'ಭೂಮಿ', meaning: 'Bhoomi (Earth)' },
+      { letter: 'ಮ', translit: 'ma', example: 'ಮನೆ', meaning: 'Mane (House)' },
+      { letter: 'ಯ', translit: 'ya', example: 'ಯಂತ್ರ', meaning: 'Yantra (Machine)' },
+      { letter: 'ರ', translit: 'ra', example: 'ರಥ', meaning: 'Ratha (Chariot)' },
+      { letter: 'ಲ', translit: 'la', example: 'ಲತೆ', meaning: 'Late (Vine)' },
+      { letter: 'ವ', translit: 'va', example: 'ವನ', meaning: 'Vana (Forest)' },
+      { letter: 'ಶ', translit: 'sha', example: 'ಶಾಲೆ', meaning: 'Shaale (School)' },
+      { letter: 'ಷ', translit: 'sha', example: 'ಷಟ್ಪದಿ', meaning: 'Shatpadi (Bee)' },
+      { letter: 'ಸ', translit: 'sa', example: 'ಸೂರ್ಯ', meaning: 'Surya (Sun)' },
+      { letter: 'ಹ', translit: 'ha', example: 'ಹೂವು', meaning: 'Hoovu (Flower)' },
+      { letter: 'ಳ', translit: 'La', example: 'ಬಾಳೆ', meaning: 'Baale (Banana)' }
+    ];
+
+    // ─── Poets & Writers ───
+    const POETS = [
+      {
+        nameKn: 'ಪಂಪ', nameEn: 'Pampa', era: '10th Century CE',
+        works: 'Vikramarjuna Vijaya (Pampa Bharata), Aadi Purana',
+        legacy: 'Revered as the Adikavi (First Poet) of Kannada literature, he set the literary standard for centuries.',
+        jnanpith: false, initial: 'ಪಂ', img: 'images/poets/pampa.jpg'
+      },
+      {
+        nameKn: 'ಬಸವಣ್ಣ', nameEn: 'Basavanna', era: '12th Century CE',
+        works: 'Vachana Sahitya (Prose Poetry)',
+        legacy: 'Social reformer, philosopher, and statesman who founded the Lingayat movement and championed equality.',
+        jnanpith: false, initial: 'ಬ', img: 'images/poets/basavanna.jpg'
+      },
+      {
+        nameKn: 'ಅಕ್ಕ ಮಹಾದೇವಿ', nameEn: 'Akka Mahadevi', era: '12th Century CE',
+        works: 'Vachanas (Devotional poems)',
+        legacy: 'A fearless Bhakti poet and mystic who challenged social norms and wrote profound spiritual verses.',
+        jnanpith: false, initial: 'ಅ', img: 'images/poets/akka_mahadevi.jpg'
+      },
+      {
+        nameKn: 'ಪುರಂದರ ದಾಸ', nameEn: 'Purandara Dasa', era: '1484–1564',
+        works: 'Thousands of devotional compositions (Padas, Kirtanas)',
+        legacy: 'Hailed as the Pitamaha (Father) of Carnatic Music. His compositions remain foundational.',
+        jnanpith: false, initial: 'ಪು', img: 'images/poets/purandara_dasa.jpg'
+      },
+      {
+        nameKn: 'ಕನಕ ದಾಸ', nameEn: 'Kanaka Dasa', era: '1509–1609',
+        works: 'Nalacharitre, Haribhaktisara, Mohanatarangini',
+        legacy: 'Poet-saint, philosopher, and musician who championed devotion and social justice.',
+        jnanpith: false, initial: 'ಕ', img: 'images/poets/kanaka_dasa.jpg'
+      },
+      {
+        nameKn: 'ಕುವೆಂಪು', nameEn: 'Kuvempu', era: '1904–1994',
+        works: 'Sri Ramayana Darshanam, Malegalalli Madumagalu',
+        legacy: 'Rashtrakavi (National Poet) of Karnataka. His epic won the first Jnanpith for Kannada.',
+        jnanpith: true, jnanpithYear: 1967, initial: 'ಕು', img: 'images/poets/kuvempu.jpg'
+      },
+      {
+        nameKn: 'ದ.ರಾ. ಬೇಂದ್ರೆ', nameEn: 'D. R. Bendre', era: '1896–1981',
+        works: 'Naaku Tanti, Aralu Maralu, Gari',
+        legacy: 'Varakavi (Poet Laureate) known for his lyrical genius and mastery of Kannada rhythm.',
+        jnanpith: true, jnanpithYear: 1973, initial: 'ಬೇಂ', img: 'images/poets/bendre.jpg'
+      },
+      {
+        nameKn: 'ಶಿವರಾಮ ಕಾರಂತ', nameEn: 'Shivaram Karanth', era: '1902–1997',
+        works: 'Mookajjiya Kanasugalu, Chomana Dudi, Marali Mannige',
+        legacy: 'Renaissance man — novelist, environmentalist, Yakshagana reformer, and cultural icon.',
+        jnanpith: true, jnanpithYear: 1977, initial: 'ಕಾ', img: 'images/poets/karanth.jpg'
+      },
+      {
+        nameKn: 'ಮಾಸ್ತಿ ವೆಂಕಟೇಶ ಅಯ್ಯಂಗಾರ್', nameEn: 'Masti Venkatesha Iyengar', era: '1891–1986',
+        works: 'Chikkaveera Rajendra, Subbanna, Short Stories',
+        legacy: 'The "Father of Kannada Short Story," his elegant prose defined modern Kannada fiction.',
+        jnanpith: true, jnanpithYear: 1983, initial: 'ಮಾ', img: 'images/poets/masti.jpg'
+      },
+      {
+        nameKn: 'ಯು.ಆರ್. ಅನಂತಮೂರ್ತಿ', nameEn: 'U. R. Ananthamurthy', era: '1932–2014',
+        works: 'Samskara, Bharathipura, Avasthe',
+        legacy: 'A leading voice of the Navya movement. Samskara remains a landmark of Indian literature.',
+        jnanpith: true, jnanpithYear: 1994, initial: 'ಅನಂ', img: 'images/poets/ananthamurthy.jpg'
+      },
+      {
+        nameKn: 'ಗಿರೀಶ್ ಕಾರ್ನಾಡ್', nameEn: 'Girish Karnad', era: '1938–2019',
+        works: 'Tughlaq, Hayavadana, Yayati, Nagamandala',
+        legacy: 'India\'s foremost playwright who merged mythology, history, and modernity on the stage.',
+        jnanpith: true, jnanpithYear: 1998, initial: 'ಗಿ', img: 'images/poets/karnad.jpg'
+      },
+      {
+        nameKn: 'ಗೋಪಾಲಕೃಷ್ಣ ಅಡಿಗ', nameEn: 'Gopalakrishna Adiga', era: '1918–1992',
+        works: 'Bhoomi Geetha, Vardhamana, Chandra',
+        legacy: 'The pioneer of Navya (Modernist) poetry in Kannada, transforming its literary landscape.',
+        jnanpith: false, initial: 'ಅಡಿ', img: 'images/poets/adiga.jpg'
+      },
+      {
+        nameKn: 'ವಿ.ಕೃ. ಗೋಕಾಕ್', nameEn: 'V. K. Gokak', era: '1909–1992',
+        works: 'Bharatisindhu Rashmi, Dyava Prithvi, Samarasave Jeevanadharma',
+        legacy: 'Led the Gokak movement for Kannada language and delivered an epic on the civilisational river.',
+        jnanpith: true, jnanpithYear: 1990, initial: 'ಗೋ', img: 'images/poets/gokak.jpg'
+      }
+    ];
+
+    // ─── Cinema Legends ───
+    const CINEMA = [
+      {
+        nameKn: 'ಡಾ. ರಾಜ್‌ಕುಮಾರ್', nameEn: 'Dr. Rajkumar', title: 'ನಟಸಾರ್ವಭೌಮ (Natasarvabhauma)',
+        films: 'Bangarada Manushya, Kasturi Nivasa, Mayura, Shabdavedi',
+        initial: 'ರಾ', img: 'images/actors/rajkumar.jpg'
+      },
+      {
+        nameKn: 'ವಿಷ್ಣುವರ್ಧನ್', nameEn: 'Vishnuvardhan', title: 'ಸಾಹಸ ಸಿಂಹ (Sahasa Simha)',
+        films: 'Nagarahavu, Bandhana, Suprabhatha, Kotigobba',
+        initial: 'ವಿ', img: 'images/actors/vishnuvardhan.jpg'
+      },
+      {
+        nameKn: 'ಅಂಬರೀಶ್', nameEn: 'Ambareesh', title: 'ರೆಬೆಲ್ ಸ್ಟಾರ್ (Rebel Star)',
+        films: 'Antha, Masanada Hoovu, Olu Saar Olu',
+        initial: 'ಅಂ', img: 'images/actors/ambareesh.jpg'
+      },
+      {
+        nameKn: 'ಶಂಕರ್ ನಾಗ್', nameEn: 'Shankar Nag', title: 'ನಟ ಚಕ್ರವರ್ತಿ',
+        films: 'Malgudi Days (TV), Auto Raja, Accident, Geetha',
+        initial: 'ಶಂ', img: 'images/actors/shankar_nag.jpg'
+      },
+      {
+        nameKn: 'ಪುನೀತ್ ರಾಜ್‌ಕುಮಾರ್', nameEn: 'Puneeth Rajkumar', title: 'ಅಪ್ಪು / ಪವರ್ ಸ್ಟಾರ್ (Power Star)',
+        films: 'Appu, Rajakumara, Yuvarathnaa, Bettada Hoovu',
+        initial: 'ಪು', img: 'images/actors/puneeth.jpg'
+      },
+      {
+        nameKn: 'ಬಿ. ಸರೋಜಾ ದೇವಿ', nameEn: 'B. Saroja Devi', title: 'ಅಭಿನಯ ಸರಸ್ವತಿ',
+        films: 'Kittur Chennamma, School Master, Sandhya Raaga',
+        initial: 'ಸ', img: 'images/actors/saroja_devi.jpg'
+      },
+      {
+        nameKn: 'ಕಲ್ಪನಾ', nameEn: 'Kalpana', title: 'ಅಭಿನಯ ತಾರೆ',
+        films: 'Sharapanjara, Gejje Pooje, Bhootayyana Maga Ayyu',
+        initial: 'ಕ', img: 'images/actors/kalpana.jpg'
+      },
+      {
+        nameKn: 'ಉಪೇಂದ್ರ', nameEn: 'Upendra', title: 'ರಿಯಲ್ ಸ್ಟಾರ್ (Real Star)',
+        films: 'A, Om, Upendra, Super, Uppi 2',
+        initial: 'ಉ', img: 'images/actors/upendra.jpg'
+      },
+      {
+        nameKn: 'ಸುದೀಪ್', nameEn: 'Sudeep', title: 'ಕಿಚ್ಚ (Kiccha)',
+        films: 'Sparsha, Maanikya, Vikrant Rona, Hebbuli',
+        initial: 'ಕಿ', img: 'images/actors/sudeep.jpg'
+      },
+      {
+        nameKn: 'ಯಶ್', nameEn: 'Yash', title: 'ರಾಕಿಂಗ್ ಸ್ಟಾರ್ (Rocking Star)',
+        films: 'KGF Chapter 1 & 2, Mr. and Mrs. Ramachari, Drama',
+        initial: 'ಯ', img: 'images/actors/yash.jpg'
+      },
+      {
+        nameKn: 'ರಿಷಭ್ ಶೆಟ್ಟಿ', nameEn: 'Rishab Shetty', title: 'ಕಾಂತಾರದ ನಾಯಕ',
+        films: 'Kantara, Bell Bottom, Kirik Party (Writer)',
+        initial: 'ರಿ', img: 'images/actors/rishab_shetty.jpg'
+      }
+    ];
+
+    // ─── Famous Places ───
+    const PLACES = [
+      {
+        nameKn: 'ಹಂಪಿ', nameEn: 'Hampi', district: 'Ballari',
+        desc: 'UNESCO World Heritage Site with the magnificent ruins of the Vijayanagara Empire, featuring stunning stone temples and monuments.',
+        bestTime: 'October – February',
+        colors: ['#D4A055', '#8B6914', '#5C4033'],
+        img: 'images/places/hampi.jpg'
+      },
+      {
+        nameKn: 'ಮೈಸೂರು ಅರಮನೆ', nameEn: 'Mysuru Palace', district: 'Mysuru',
+        desc: 'The opulent Indo-Saracenic palace illuminated by 100,000 bulbs during Dasara — a royal jewel of Karnataka.',
+        bestTime: 'October (Dasara)',
+        colors: ['#FFD700', '#C8A951', '#4A0E4E'],
+        img: 'images/places/mysuru_palace.jpg'
+      },
+      {
+        nameKn: 'ಬಾದಾಮಿ', nameEn: 'Badami', district: 'Bagalkot',
+        desc: 'Rock-cut cave temples from the 6th century Chalukya dynasty, set against dramatic red sandstone cliffs.',
+        bestTime: 'October – March',
+        colors: ['#CD5C5C', '#8B4513', '#DAA520'],
+        img: 'images/places/badami.jpg'
+      },
+      {
+        nameKn: 'ಪಟ್ಟದಕಲ್ಲು', nameEn: 'Pattadakal', district: 'Bagalkot',
+        desc: 'UNESCO Heritage site where Chalukyan architects experimented with both Dravidian and Nagara temple styles.',
+        bestTime: 'October – February',
+        colors: ['#C19A6B', '#8B7355', '#D2691E'],
+        img: 'images/places/pattadakal.jpg'
+      },
+      {
+        nameKn: 'ಬೇಲೂರು–ಹಳೇಬೀಡು', nameEn: 'Belur & Halebidu', district: 'Hassan',
+        desc: 'Hoysala masterpieces with impossibly intricate star-shaped temples carved from soapstone.',
+        bestTime: 'October – March',
+        colors: ['#708090', '#A9A9A9', '#556B2F'],
+        img: 'images/places/belur.jpg'
+      },
+      {
+        nameKn: 'ಶ್ರವಣಬೆಳಗೊಳ', nameEn: 'Shravanabelagola', district: 'Hassan',
+        desc: 'Home to the colossal 57-foot Gommateshwara monolith, one of the tallest free-standing statues in the world.',
+        bestTime: 'November – February',
+        colors: ['#C0C0C0', '#E8E8E8', '#87CEEB'],
+        img: 'images/places/shravanabelagola.jpg'
+      },
+      {
+        nameKn: 'ಗೋಲ ಗುಮ್ಮಟ', nameEn: 'Gol Gumbaz', district: 'Vijayapura',
+        desc: 'The mausoleum of Mohammed Adil Shah featuring the world\'s second-largest dome and a famous whispering gallery.',
+        bestTime: 'October – March',
+        colors: ['#4682B4', '#87CEEB', '#B8860B'],
+        img: 'images/places/gol_gumbaz.jpg'
+      },
+      {
+        nameKn: 'ಜೋಗ ಜಲಪಾತ', nameEn: 'Jog Falls', district: 'Shivamogga',
+        desc: 'India\'s second-highest plunge waterfall at 253 m, where the Sharavathi river cascades in four distinct streams.',
+        bestTime: 'August – December',
+        colors: ['#228B22', '#4169E1', '#F0F8FF'],
+        img: 'images/places/jog_falls.jpg'
+      },
+      {
+        nameKn: 'ಕೊಡಗು (ಕೂರ್ಗ್)', nameEn: 'Coorg (Kodagu)', district: 'Kodagu',
+        desc: 'The "Scotland of India" — misty hills draped in coffee plantations, spice gardens, and pristine rainforests.',
+        bestTime: 'October – March',
+        colors: ['#006400', '#228B22', '#F5F5DC'],
+        img: 'images/places/coorg.jpg'
+      },
+      {
+        nameKn: 'ಗೋಕರ್ಣ', nameEn: 'Gokarna', district: 'Uttara Kannada',
+        desc: 'Sacred town with pristine, crescent-shaped beaches and the ancient Mahabaleshwara temple.',
+        bestTime: 'October – March',
+        colors: ['#00CED1', '#FFE4B5', '#FF6347'],
+        img: 'images/places/gokarna.jpg'
+      },
+      {
+        nameKn: 'ವಿಧಾನ ಸೌಧ', nameEn: 'Vidhana Soudha', district: 'Bengaluru',
+        desc: 'The majestic seat of the Karnataka Legislature, built in Neo-Dravidian style from Bangalore granite.',
+        bestTime: 'Year-round',
+        colors: ['#808080', '#A9A9A9', '#CD853F'],
+        img: 'images/places/vidhana_soudha.jpg'
+      },
+      {
+        nameKn: 'ನಂದಿ ಬೆಟ್ಟ', nameEn: 'Nandi Hills', district: 'Chikkaballapur',
+        desc: 'An ancient hill fortress and sunrise viewpoint at 1,478 m, once the summer retreat of Tipu Sultan.',
+        bestTime: 'October – May',
+        colors: ['#6B8E23', '#90EE90', '#FFB6C1'],
+        img: 'images/places/nandi_hills.jpg'
+      },
+      {
+        nameKn: 'ದಂಡೇಲಿ', nameEn: 'Dandeli', district: 'Uttara Kannada',
+        desc: 'A thrilling adventure hub — white-water rafting on the Kali river, dense wildlife, and lush Western Ghats.',
+        bestTime: 'October – May',
+        colors: ['#2E8B57', '#3CB371', '#8FBC8F'],
+        img: 'images/places/dandeli.jpg'
+      }
+    ];
+
+    // ─── Quick Facts ───
+    const FACTS = [
+      { icon: '🗓️', value: '1956', label: 'Formation Year', labelKn: 'ಸ್ಥಾಪನೆ', suffix: '', isYear: true, img: 'images/pride/formation.jpg' },
+      { icon: '📍', value: '31', label: 'Districts', labelKn: 'ಜಿಲ್ಲೆಗಳು', suffix: '', img: 'images/pride/districts.jpg' },
+      { icon: '🐦', value: '', label: 'Indian Roller (Neelakantha)', labelKn: 'ರಾಜ್ಯ ಪಕ್ಷಿ: ನೀಲಕಂಠ', suffix: '🪶', isText: true, img: 'images/pride/bird.jpg' },
+      { icon: '🐘', value: '', label: 'Elephant (State Animal)', labelKn: 'ರಾಜ್ಯ ಪ್ರಾಣಿ: ಆನೆ', suffix: '🐘', isText: true, img: 'images/pride/animal.jpg' },
+      { icon: '🪷', value: '', label: 'Lotus (State Flower)', labelKn: 'ರಾಜ್ಯ ಹೂವು: ಕಮಲ', suffix: '🌸', isText: true, img: 'images/pride/flower.jpg' },
+      { icon: '🌳', value: '', label: 'Sandalwood (State Tree)', labelKn: 'ರಾಜ್ಯ ಮರ: ಶ್ರೀಗಂಧ', suffix: '🪵', isText: true, img: 'images/pride/tree.jpg' },
+      { icon: '📜', value: '2000', label: 'Years of Kannada', labelKn: 'ಕನ್ನಡ ಭಾಷೆಯ ಇತಿಹಾಸ', suffix: '+', img: 'images/pride/history.jpg' },
+      { icon: '🏆', value: '8', label: 'Jnanpith Awards', labelKn: 'ಜ್ಞಾನಪೀಠ ಪ್ರಶಸ್ತಿಗಳು', suffix: '', img: 'images/pride/jnanpith.jpg' }
+    ];
+
+    // ─── Quiz Data ───
+    const QUIZ_QUESTIONS = [
+      {
+        qKn: 'ದಿನದ ಆರಂಭ ಅಥವಾ ಸಂಜೆ ತಿಂಡಿಗೆ ನಿಮ್ಮ ಮೊದಲ ಪ್ರಾಶಸ್ತ್ಯ ಯಾವುದು?',
+        qEn: 'What is your ideal comfort pick for morning breakfast or evening snack?',
+        options: [
+          { textKn: 'ಘಮಘಮಿಸುವ ನೊರೆ ತುಂಬಿದ ಬಿಸಿ ಫಿಲ್ಟರ್ ಕಾಫಿ', textEn: 'Steaming aromatic frothy Filter Coffee', dish: 'filter_coffee' },
+          { textKn: 'ಹೆಂಚಿನಿಂದ ಇಳಿದ ಗರಿಗರಿಯಾದ ಬೆಣ್ಣೆ ದೋಸೆ', textEn: 'Crispy, golden-crusted Davanagere Benne Dose', dish: 'benne_dose' },
+          { textKn: 'ಬಾಯಲ್ಲಿ ನೀರೂರಿಸುವ ಶುದ್ಧ ತುಪ್ಪದ ಮೈಸೂರು ಪಾಕ್', textEn: 'Rich, melt-in-mouth royal Mysore Pak', dish: 'mysore_pak' },
+          { textKn: 'ಆರೋಗ್ಯಕರ, ದೃಢವಾದ ಬಿಸಿ ಬೇಳೆ ಬಾತ್ ಅಥವಾ ಮುದ್ದೆ', textEn: 'Wholesome, hot Bisi Bele Bath or Ragi Mudde', dish: 'bisi_bele_bath' }
+        ]
+      },
+      {
+        qKn: 'ನಿಮ್ಮ ವ್ಯಕ್ತಿತ್ವವನ್ನು ನೀವು ಹೇಗೆ ಬಣ್ಣಿಸುತ್ತೀರಿ?',
+        qEn: 'How would your best friends describe your nature?',
+        options: [
+          { textKn: 'ಸದಾ ಲವಲವಿಕೆ, ಚುರುಕು ಮತ್ತು ತೀಕ್ಷ್ಣ ಬುದ್ಧಿ', textEn: 'Energetic, sharp, and constantly inspiring', dish: 'filter_coffee' },
+          { textKn: 'ಎಲ್ಲರೊಂದಿಗೆ ಪ್ರೀತಿಯಿಂದ ಬೆರೆತು ಸಿಹಿ ಹಂಚುವ ಸ್ನೇಹಜೀವಿ', textEn: 'Warm-hearted, sweet, and bringing smiles everywhere', dish: 'mysore_pak' },
+          { textKn: 'ಕಷ್ಟದ ಸಂದರ್ಭದಲ್ಲೂ ಅಚಲ, ದೃಢ ಮತ್ತು ನಂಬಿಕಸ್ಥ', textEn: 'Grounded, strong, resilient, and utterly dependable', dish: 'ragi_mudde' },
+          { textKn: 'ಪ್ರತಿ ಕೆಲಸದಲ್ಲೂ ಹೊಸತನ ಮತ್ತು ಆಕರ್ಷಕ ಆವೃತ್ತಿ', textEn: 'Creative, vibrant, and always standout', dish: 'benne_dose' }
+        ]
+      },
+      {
+        qKn: 'ಕರ್ನಾಟಕದಲ್ಲಿ ನಿಮಗೆ ಅತ್ಯಂತ ನೆಚ್ಚಿನ ಪ್ರವಾಸ ತಾಣ ಯಾವುದು?',
+        qEn: 'Which landscape of Karnataka calls to your soul?',
+        options: [
+          { textKn: 'ಚಿಕ್ಕಮಗಳೂರು ಮತ್ತು ಕೊಡಗಿನ ಹಸಿರು ಬೆಟ್ಟಗಳು', textEn: 'Misty green coffee estates of Chikkamagaluru & Coorg', dish: 'filter_coffee' },
+          { textKn: 'ಭವ್ಯ ಅರಮನೆಗಳ ಸಾಂಸ್ಕೃತಿಕ ನಗರಿ ಮೈಸೂರು', textEn: 'Royal palaces & grand heritage of Mysuru', dish: 'mysore_pak' },
+          { textKn: 'ಉತ್ತರ ಕರ್ನಾಟಕ ಮತ್ತು ಬಯಲು ಸೀಮೆಯ ಐತಿಹಾಸಿಕ ಕೋಟೆಗಳು', textEn: 'Historic rock architecture & forts of North Karnataka', dish: 'jolada_rotti' },
+          { textKn: 'ಕರಾವಳಿಯ ಸುಂದರ ಕಡಲತೀರಗಳು', textEn: 'Pristine shores & swaying palms of Karavali Coast', dish: 'neer_dose' }
+        ]
+      },
+      {
+        qKn: 'ನಿಮ್ಮ ಅಡುಗೆ ತಟ್ಟೆಯಲ್ಲಿ ಯಾವ ರುಚಿ ಪ್ರಧಾನವಾಗಿರಬೇಕು?',
+        qEn: 'Which flavor note makes your heart skip a beat?',
+        options: [
+          { textKn: 'ಮಸಾಲೆ ಮತ್ತು ಖಾರದ ತೀಕ್ಷ್ಣ, ಸಂಭ್ರಮದ ಸಮ್ಮಿಶ್ರಣ', textEn: 'Fiery, complex, robust spices with tamarind tang', dish: 'bisi_bele_bath' },
+          { textKn: 'ಅಪ್ಪಟ ದೇಸಿ ತುಪ್ಪದ ರಾಜಶಾಹಿ ಪರಿಮಳ', textEn: 'Pure, opulent aroma of golden desi ghee', dish: 'mysore_pak' },
+          { textKn: 'ಗರಿಗರಿ ಕವಚ ಮತ್ತು ಬೆಣ್ಣೆಯ ನವಿರು ಸವಿ', textEn: 'Crunchy buttery crust with melt-in-mouth center', dish: 'benne_dose' },
+          { textKn: 'ಸರಳ, ಸಾತ್ವಿಕ ಮತ್ತು ನೈಸರ್ಗಿಕ ಪೌಷ್ಟಿಕಾಂಶ', textEn: 'Simple, wholesome, natural nourishment', dish: 'ragi_mudde' }
+        ]
+      },
+      {
+        qKn: 'ಸ್ನೇಹಿತರ ವಲಯದಲ್ಲಿ ನಿಮ್ಮ ಪ್ರಮುಖ ಸ್ಥಾನವೇನು?',
+        qEn: 'What is your superpower in any gathering?',
+        options: [
+          { textKn: 'ತಕ್ಷಣ ಎಲ್ಲರ ಮೂಡ್ ರಿಫ್ರೆಶ್ ಮಾಡುವ ಎನರ್ಜಿ ಬೂಸ್ಟರ್!', textEn: 'The instant mood-lifter and energizer of the group!', dish: 'filter_coffee' },
+          { textKn: 'ಯಾರೂ ಮರೆಯಲಾಗದ, ಸದಾ ಪ್ರೀತಿಯ ಸಿಹಿ ಸಂಭ್ರಮ!', textEn: 'The sweet soul that makes every occasion memorable!', dish: 'mysore_pak' },
+          { textKn: 'ಯಾವ ಬಿರುಗಾಳಿಗೂ ಅಲುಗಾಡದ ಭದ್ರ ಅಡಿಪಾಯ!', textEn: 'The rock-solid foundation that never breaks under pressure!', dish: 'ragi_mudde' },
+          { textKn: 'ಎಲ್ಲರ ಮೆಚ್ಚಿನ ಅಚ್ಚುಮೆಚ್ಚಿನ ಕ್ಲಾಸಿಕ್ ನಾಯಕ!', textEn: 'The crowd favorite that everyone craves to meet!', dish: 'benne_dose' }
+        ]
+      }
+    ];
+
+    const QUIZ_RESULTS = {
+      mysore_pak: {
+        dishKn: 'ಮೈಸೂರು ಪಾಕ್ (Mysore Pak)',
+        dishEn: 'Mysore Pak',
+        tagKn: 'ರಾಜಗಾಂಭೀರ್ಯದ ಸಿಹಿ ವ್ಯಕ್ತಿತ್ವ! 👑',
+        tagEn: 'Royally Sweet & Unforgettable! 👑',
+        descKn: 'ನೀವು ಮೈಸೂರು ಪಾಕ್‌ನಂತೆ ಎಲ್ಲರ ಮನಸ್ಸನ್ನು ಪ್ರೀತಿಯಿಂದ ಗೆಲ್ಲುವ ಮಧುರ ವ್ಯಕ್ತಿತ್ವದವರು. ನಿಮ್ಮ ನಡತೆ ರಾಜಶಾಹಿ, ಮಾತು ಮಧುರ, ಎಲ್ಲರಲ್ಲೂ ಸಂಭ್ರಮ ತರುವ ಸ್ನೇಹಜೀವಿ!',
+        descEn: 'Like the royal Mysore Pak, you have a golden heart that melts away negativity and leaves everyone smiling with joy and warmth.',
+        art: '🧈'
+      },
+      benne_dose: {
+        dishKn: 'ದಾವಣಗೆರೆ ಬೆಣ್ಣೆ ದೋಸೆ (Davanagere Benne Dose)',
+        dishEn: 'Davanagere Benne Dose',
+        tagKn: 'ಗೋಲ್ಡನ್ & ಕ್ರಿಸ್ಪಿ ವ್ಯಕ್ತಿತ್ವ! ✨',
+        tagEn: 'Warm, Rich & Irresistible! ✨',
+        descKn: 'ನೀವು ದಾವಣಗೆರೆ ಬೆಣ್ಣೆ ದೋಸೆಯಂತೆ ಸದಾ ತಾಜಾ, ಆಕರ್ಷಕ ಮತ್ತು ಎಲ್ಲರ ಮೆಚ್ಚಿನವರು. ನಿಮ್ಮಲ್ಲಿ ಉತ್ಸಾಹ ಮತ್ತು ಬೆಣ್ಣೆಯಂತಹ ಮೃದು ಮನಸ್ಸಿದೆ!',
+        descEn: 'Like Davanagere Benne Dose, you possess a rich golden aura with a crisp confident exterior and a wonderfully soft, generous interior.',
+        art: '🥞'
+      },
+      ragi_mudde: {
+        dishKn: 'ರಾಗಿ ಮುದ್ದೆ (Ragi Mudde)',
+        dishEn: 'Ragi Mudde',
+        tagKn: 'ದೃಢ ಮತ್ತು ಅಪ್ಪಟ ದೇಸೀ ಶಕ್ತಿ! 🌾',
+        tagEn: 'Grounded, Strong & Authentic! 🌾',
+        descKn: 'ನೀವು ರಾಗಿ ಮುದ್ದೆಯಂತೆ ನೆಲದ ಮೂಲಕ್ಕೆ ಬದ್ಧರಾದ, ದೃಢ ಸಂಕಲ್ಪದ ಪ್ರಾಮಾಣಿಕ ವ್ಯಕ್ತಿ. ಯಾವುದೇ ಆಡಂಬರವಿಲ್ಲದೆ ನಂಬಿಕಸ್ಥ ಮಾರ್ಗದರ್ಶಕರು!',
+        descEn: 'Like the mighty Ragi Mudde, you are humble, deeply connected to your roots, and possess extraordinary inner strength.',
+        art: '🟤'
+      },
+      bisi_bele_bath: {
+        dishKn: 'ಬಿಸಿ ಬೇಳೆ ಬಾತ್ (Bisi Bele Bath)',
+        dishEn: 'Bisi Bele Bath',
+        tagKn: 'ಸಾಮರಸ್ಯದ ಪರಿಪೂರ್ಣ ಸಮ್ಮಿಲನ! 🍲',
+        tagEn: 'Flavorful, Comforting & Harmonious! 🍲',
+        descKn: 'ನೀವು ಬಿಸಿ ಬೇಳೆ ಬಾತ್‌ನಂತೆ ವಿಭಿನ್ನ ಗುಣಗಳನ್ನು ಸುಂದರವಾಗಿ ಒಗ್ಗೂಡಿಸುವ ಕೌಶಲ್ಯವುಳ್ಳವರು. ನಿಮ್ಮ ಸಾಮೀಪ್ಯ ಎಲ್ಲರಿಗೂ ಆಪ್ತತೆ ಮತ್ತು ನೆಮ್ಮದಿ ನೀಡುತ್ತದೆ!',
+        descEn: 'Like Bisi Bele Bath, you blend diverse elements into pure harmony. Comforting, flavorful, and deeply cherished by all.',
+        art: '🍲'
+      },
+      filter_coffee: {
+        dishKn: 'ಫಿಲ್ಟರ್ ಕಾಫಿ (Filter Coffee)',
+        dishEn: 'Filter Coffee',
+        tagKn: 'ತೀಕ್ಷ್ಣ & ಲವಲವಿಕೆಯ ಉತ್ಸಾಹ! ☕',
+        tagEn: 'Bold, Vibrant & Electrifying! ☕',
+        descKn: 'ನೀವು ದಟ್ಟವಾದ ಫಿಲ್ಟರ್ ಕಾಫಿಯಂತೆ ಸದಾ ಚುರುಕು, ಉತ್ಸಾಹದ ಚಿಲುಮೆ ಮತ್ತು ಸ್ಪಷ್ಟ ಆಲೋಚನೆಯುಳ್ಳವರು. ನಿಮ್ಮ ಸ್ಪರ್ಶ ಎಲ್ಲರಲ್ಲೂ ಚೈತನ್ಯ ತುಂಬುತ್ತದೆ!',
+        descEn: 'Like a piping hot tumbler of Filter Coffee, your presence is an instant shot of energy, inspiration, and vibrant clarity.',
+        art: '☕'
+      }
+    };
+
+
+    /* ═══════════════════════════════════════════════════════════════
+       LANGUAGE STATE
+       ═══════════════════════════════════════════════════════════════ */
+    let currentLang = 'kn'; // 'kn' or 'en'
+
+    function toggleLanguage() {
+      currentLang = currentLang === 'kn' ? 'en' : 'kn';
+      document.getElementById('langToggle').textContent = currentLang === 'kn' ? 'EN' : 'ಕನ್ನಡ';
+      document.documentElement.lang = currentLang === 'kn' ? 'kn' : 'en';
+
+      // Swap all data-kn / data-en text
+      document.querySelectorAll('[data-kn][data-en]').forEach(el => {
+        el.textContent = el.getAttribute(currentLang === 'kn' ? 'data-kn' : 'data-en');
+      });
+
+      // Toggle nav label visibility
+      document.querySelectorAll('.kn-label').forEach(el => el.style.display = currentLang === 'kn' ? 'inline' : 'none');
+      document.querySelectorAll('.en-label').forEach(el => el.style.display = currentLang === 'en' ? 'inline' : 'none');
+
+      // Re-render food section for language update
+      if (typeof updateFoodLanguage === 'function') {
+        updateFoodLanguage();
+      }
+    }
+
+
+    /* ═══════════════════════════════════════════════════════════════
+       THREE.JS — HERO FLAG SCENE
+       ═══════════════════════════════════════════════════════════════ */
+    function initHeroScene() {
+      const container = document.getElementById('hero-canvas');
+      const W = window.innerWidth, H = window.innerHeight;
+
+      // Renderer
+      const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+      renderer.setSize(W, H);
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      renderer.setClearColor(0x000000, 0);
+      container.appendChild(renderer.domElement);
+
+      // Scene & Camera
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(50, W / H, 0.1, 1000);
+      camera.position.set(0, 2.2, 7);
+      camera.lookAt(0, 2.2, 0);
+
+      // Lighting
+      const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+      scene.add(ambientLight);
+      const dirLight = new THREE.DirectionalLight(0xffffff, 0.9);
+      dirLight.position.set(5, 8, 6);
+      scene.add(dirLight);
+      const pointLight = new THREE.PointLight(0xFFC20E, 0.4, 20);
+      pointLight.position.set(-3, 5, 3);
+      scene.add(pointLight);
+
+      // ── Flagpole ──
+      const poleHeight = 6.5;
+      const poleGeo = new THREE.CylinderGeometry(0.04, 0.07, poleHeight, 12);
+      const poleMat = new THREE.MeshStandardMaterial({
+        color: 0x8B6914, metalness: 0.6, roughness: 0.3
+      });
+      const pole = new THREE.Mesh(poleGeo, poleMat);
+      pole.position.set(-2.8, poleHeight / 2 - 1, 0);
+      scene.add(pole);
+
+      // Pole top sphere
+      const topSphereGeo = new THREE.SphereGeometry(0.1, 16, 16);
+      const topSphereMat = new THREE.MeshStandardMaterial({ color: 0xFFD700, metalness: 0.8, roughness: 0.2 });
+      const topSphere = new THREE.Mesh(topSphereGeo, topSphereMat);
+      topSphere.position.set(-2.8, poleHeight - 1 + 0.1, 0);
+      scene.add(topSphere);
+
+      // Pole base
+      const baseGeo = new THREE.CylinderGeometry(0.18, 0.22, 0.3, 12);
+      const baseMat = new THREE.MeshStandardMaterial({ color: 0x5C4033, metalness: 0.4, roughness: 0.5 });
+      const baseMesh = new THREE.Mesh(baseGeo, baseMat);
+      baseMesh.position.set(-2.8, -0.85, 0);
+      scene.add(baseMesh);
+
+      // ── Flag ──
+      const flagW = 4, flagH = 2.5, segW = 40, segH = 25;
+      const flagGeo = new THREE.PlaneGeometry(flagW, flagH, segW, segH);
+
+      // Create flag texture on canvas
+      const texCanvas = document.createElement('canvas');
+      texCanvas.width = 512; texCanvas.height = 320;
+      const ctx = texCanvas.getContext('2d');
+      // Yellow top half
+      ctx.fillStyle = '#FFC20E';
+      ctx.fillRect(0, 0, 512, 160);
+      // Red bottom half
+      ctx.fillStyle = '#E31E24';
+      ctx.fillRect(0, 160, 512, 160);
+
+
+      const flagTexture = new THREE.CanvasTexture(texCanvas);
+      flagTexture.wrapS = THREE.ClampToEdgeWrapping;
+      flagTexture.wrapT = THREE.ClampToEdgeWrapping;
+
+      const flagMat = new THREE.MeshStandardMaterial({
+        map: flagTexture,
+        side: THREE.DoubleSide,
+        roughness: 0.7,
+        metalness: 0.05
+      });
+      const flag = new THREE.Mesh(flagGeo, flagMat);
+
+      // Position flag: starts at bottom, will animate up
+      const flagTopY = poleHeight - 1 - flagH / 2; // final top position
+      const flagBottomY = -0.5; // start position (near base)
+      flag.position.set(-2.8 + flagW / 2 + 0.06, flagBottomY, 0);
+      scene.add(flag);
+
+      // Store original vertex positions for wave animation
+      const origPositions = flagGeo.attributes.position.array.slice();
+
+      // ── Floating particles in scene ──
+      const particleCount = 60;
+      const particleGeo = new THREE.BufferGeometry();
+      const particlePositions = new Float32Array(particleCount * 3);
+      const particleColors = new Float32Array(particleCount * 3);
+      for (let i = 0; i < particleCount; i++) {
+        particlePositions[i * 3] = (Math.random() - 0.5) * 14;
+        particlePositions[i * 3 + 1] = Math.random() * 8 - 1;
+        particlePositions[i * 3 + 2] = (Math.random() - 0.5) * 8;
+        // Alternate between yellow and red
+        if (Math.random() > 0.5) {
+          particleColors[i * 3] = 1; particleColors[i * 3 + 1] = 0.76; particleColors[i * 3 + 2] = 0.05;
+        } else {
+          particleColors[i * 3] = 0.89; particleColors[i * 3 + 1] = 0.12; particleColors[i * 3 + 2] = 0.14;
+        }
+      }
+      particleGeo.setAttribute('position', new THREE.BufferAttribute(particlePositions, 3));
+      particleGeo.setAttribute('color', new THREE.BufferAttribute(particleColors, 3));
+      const particleMat = new THREE.PointsMaterial({
+        size: 0.06, vertexColors: true, transparent: true, opacity: 0.5, blending: THREE.AdditiveBlending
+      });
+      const particles = new THREE.Points(particleGeo, particleMat);
+      scene.add(particles);
+
+      // ── Animation state ──
+      let hoistProgress = 0;
+      const hoistDuration = 3.0; // seconds
+      let flagHoisted = false;
+      const clock = new THREE.Clock();
+
+      // Mouse parallax
+      let mouseX = 0, mouseY = 0;
+      document.addEventListener('mousemove', (e) => {
+        mouseX = (e.clientX / W - 0.5) * 2;
+        mouseY = (e.clientY / H - 0.5) * 2;
+      });
+
+      function animate() {
+        requestAnimationFrame(animate);
+        const time = clock.getElapsedTime();
+        const dt = clock.getDelta();
+
+        // ── Hoist animation ──
+        if (!flagHoisted) {
+          hoistProgress = Math.min(time / hoistDuration, 1);
+          const eased = 1 - Math.pow(1 - hoistProgress, 3); // ease-out cubic
+          const currentY = flagBottomY + (flagTopY - flagBottomY) * eased;
+          flag.position.y = currentY;
+          if (hoistProgress >= 1) {
+            flagHoisted = true;
+            // Show hero text
+            document.getElementById('heroOverlay').classList.add('visible');
+            // Launch confetti
+            launchConfetti();
+          }
+        }
+
+        // ── Flag wave animation ──
+        const positions = flagGeo.attributes.position.array;
+        for (let i = 0; i < positions.length; i += 3) {
+          const ox = origPositions[i];
+          const oy = origPositions[i + 1];
+          // Distance from left edge (pole) normalized 0→1
+          const dist = (ox + flagW / 2) / flagW;
+          const wave1 = Math.sin(ox * 1.8 + time * 2.5) * 0.18 * dist;
+          const wave2 = Math.sin(oy * 2.5 + time * 1.8 + 1.5) * 0.08 * dist;
+          const wave3 = Math.sin((ox + oy) * 1.2 + time * 3.2) * 0.04 * dist * dist;
+          positions[i + 2] = wave1 + wave2 + wave3;
+        }
+        flagGeo.attributes.position.needsUpdate = true;
+        flagGeo.computeVertexNormals();
+
+        // ── Particle float ──
+        const pArr = particleGeo.attributes.position.array;
+        for (let i = 0; i < particleCount; i++) {
+          pArr[i * 3 + 1] += 0.003;
+          pArr[i * 3] += Math.sin(time + i) * 0.002;
+          if (pArr[i * 3 + 1] > 7) pArr[i * 3 + 1] = -1;
+        }
+        particleGeo.attributes.position.needsUpdate = true;
+
+        // ── Subtle camera parallax ──
+        camera.position.x = 0 + mouseX * 0.3;
+        camera.position.y = 2.2 + mouseY * 0.15;
+        camera.lookAt(0, 2.2, 0);
+
+        renderer.render(scene, camera);
+      }
+
+      animate();
+
+      // ── Resize handler ──
+      window.addEventListener('resize', () => {
+        const w = window.innerWidth, h = window.innerHeight;
+        camera.aspect = w / h;
+        camera.updateProjectionMatrix();
+        renderer.setSize(w, h);
+      });
+    }
+
+
+    /* ═══════════════════════════════════════════════════════════════
+       CONFETTI / MARIGOLD PETALS
+       ═══════════════════════════════════════════════════════════════ */
+    function launchConfetti() {
+      const canvas = document.getElementById('confetti-canvas');
+      const ctx = canvas.getContext('2d');
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      const colors = ['#FFC20E', '#FFD54F', '#E31E24', '#FF6F00', '#FFAB00', '#FF5252', '#FFFFFF'];
+      const petals = [];
+      const petalCount = 150;
+
+      for (let i = 0; i < petalCount; i++) {
+        petals.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height * 0.3 - canvas.height * 0.3,
+          w: Math.random() * 10 + 5,
+          h: Math.random() * 6 + 3,
+          rot: Math.random() * Math.PI * 2,
+          rotSpeed: (Math.random() - 0.5) * 0.06,
+          speedX: (Math.random() - 0.5) * 2,
+          speedY: Math.random() * 3 + 1.5,
+          color: colors[Math.floor(Math.random() * colors.length)],
+          opacity: 1,
+          decay: 0.002 + Math.random() * 0.003
+        });
+      }
+
+      let animId;
+      function draw() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        let alive = false;
+        for (const p of petals) {
+          if (p.opacity <= 0) continue;
+          alive = true;
+          p.x += p.speedX;
+          p.y += p.speedY;
+          p.rot += p.rotSpeed;
+          p.speedX += (Math.random() - 0.5) * 0.1;
+          p.opacity -= p.decay;
+
+          ctx.save();
+          ctx.translate(p.x, p.y);
+          ctx.rotate(p.rot);
+          ctx.globalAlpha = Math.max(0, p.opacity);
+          ctx.fillStyle = p.color;
+          ctx.beginPath();
+          ctx.ellipse(0, 0, p.w / 2, p.h / 2, 0, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.restore();
+        }
+        if (alive) {
+          animId = requestAnimationFrame(draw);
+        } else {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+      }
+      draw();
+
+      // Clean up after 6s
+      setTimeout(() => {
+        cancelAnimationFrame(animId);
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+      }, 6000);
+    }
+
+
+    /* ═══════════════════════════════════════════════════════════════
+       SECTION 1: KANNADA ALPHABET
+       ═══════════════════════════════════════════════════════════════ */
+    let currentAlphaSet = 'vowels';
+
+    function renderAlphaCards(set) {
+      const data = set === 'vowels' ? VOWELS : CONSONANTS;
+      const grid = document.getElementById('alphaGrid');
+      grid.innerHTML = '';
+      data.forEach((item, i) => {
+        const card = document.createElement('div');
+        card.className = 'alpha-card';
+        card.setAttribute('role', 'listitem');
+        card.setAttribute('tabindex', '0');
+        card.setAttribute('aria-label', `${item.letter}, pronounced ${item.translit}`);
+        card.innerHTML = `
+      <div class="alpha-card-inner">
+        <div class="alpha-card-front">
+          <span class="letter">${item.letter}</span>
+          <span class="translit">${item.translit}</span>
+        </div>
+        <div class="alpha-card-back">
+          <span class="letter-back">${item.letter}</span>
+          <span class="example">${item.example}</span>
+          <span class="meaning">${item.meaning}</span>
+          <button class="speak-btn" aria-label="Listen to pronunciation" onclick="event.stopPropagation(); speakKannada('${item.example}')">🔊</button>
+        </div>
+      </div>
+    `;
+        card.addEventListener('click', () => card.classList.toggle('flipped'));
+        card.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); card.classList.toggle('flipped'); }
+        });
+        grid.appendChild(card);
+      });
+    }
+
+    function showAlphaSet(set) {
+      currentAlphaSet = set;
+      document.getElementById('btnVowels').classList.toggle('active', set === 'vowels');
+      document.getElementById('btnConsonants').classList.toggle('active', set === 'consonants');
+      renderAlphaCards(set);
+    }
+
+    function speakKannada(text) {
+      if (!('speechSynthesis' in window)) return;
+      const utter = new SpeechSynthesisUtterance(text);
+      utter.lang = 'kn-IN';
+      utter.rate = 0.8;
+      speechSynthesis.speak(utter);
+    }
+
+
+    /* ═══════════════════════════════════════════════════════════════
+       SECTION 2: POETS CAROUSEL
+       ═══════════════════════════════════════════════════════════════ */
+    let poetsOffset = 0;
+
+    function renderPoets() {
+      const track = document.getElementById('poetsTrack');
+      track.innerHTML = '';
+      POETS.forEach(p => {
+        const card = document.createElement('div');
+        card.className = 'carousel-card';
+        card.innerHTML = `
+      <div class="poet-avatar-wrap">
+        <img class="poet-img" src="${p.img}" alt="${p.nameEn}" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" loading="lazy">
+        <div class="poet-avatar-fallback" style="display:none;">${p.initial}</div>
+        ${p.jnanpith ? `<span class="jnanpith-badge">🏆 Jnanpith ${p.jnanpithYear}</span>` : ''}
+      </div>
+      <div class="poet-name-kn">${p.nameKn}</div>
+      <div class="poet-name-en">${p.nameEn}</div>
+      <div class="poet-era">${p.era}</div>
+      <div class="poet-works"><strong>Works:</strong> ${p.works}</div>
+      <div class="poet-legacy">${p.legacy}</div>
+    `;
+        // 3D tilt on hover
+        card.addEventListener('mousemove', (e) => tiltCard(e, card));
+        card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+        track.appendChild(card);
+      });
+    }
+
+    function scrollCarousel(section, dir) {
+      const track = document.getElementById(section + 'Track');
+      if (!track) return;
+      const cardW = track.children[0]?.offsetWidth + 24 || 344;
+      const maxScroll = track.scrollWidth - track.parentElement.offsetWidth;
+      if (section === 'poets') {
+        poetsOffset = Math.max(0, Math.min(poetsOffset + dir * cardW, maxScroll));
+        track.style.transform = `translateX(-${poetsOffset}px)`;
+      }
+    }
+
+
+    /* ═══════════════════════════════════════════════════════════════
+       SECTION 3: CINEMA LEGENDS
+       ═══════════════════════════════════════════════════════════════ */
+    function renderCinema() {
+      const grid = document.getElementById('cinemaGrid');
+      grid.innerHTML = '';
+      CINEMA.forEach(c => {
+        const card = document.createElement('div');
+        card.className = 'cinema-card';
+        card.innerHTML = `
+      <div class="cinema-spotlight"></div>
+      <div class="cinema-poster-wrap">
+        <img class="cinema-poster-img" src="${c.img}" alt="${c.nameEn}" onerror="this.parentElement.style.display='none';" loading="lazy">
+        <div class="cinema-poster-overlay"></div>
+        <div class="cinema-title-badge">${c.title}</div>
+      </div>
+      <div class="cinema-body">
+        <div class="cinema-name-kn">${c.nameKn}</div>
+        <div class="cinema-name-en">${c.nameEn}</div>
+        <div class="cinema-films"><strong>Notable Films:</strong> ${c.films}</div>
+      </div>
+    `;
+        card.addEventListener('mousemove', (e) => tiltCard(e, card, 6));
+        card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+        grid.appendChild(card);
+      });
+    }
+
+
+    /* ═══════════════════════════════════════════════════════════════
+       SECTION 4: FAMOUS PLACES
+       ═══════════════════════════════════════════════════════════════ */
+    function renderPlaces() {
+      const grid = document.getElementById('placesGrid');
+      grid.innerHTML = '';
+      PLACES.forEach(p => {
+        const card = document.createElement('div');
+        card.className = 'place-card';
+        const svgIllustration = generatePlaceSVG(p.colors, p.nameEn);
+        card.innerHTML = `
+      <div class="place-illustration">
+        <img class="place-img" src="${p.img}" alt="${p.nameEn}" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" loading="lazy">
+        <div class="place-svg-fallback" style="display:none;">${svgIllustration}</div>
+        <div class="place-overlay"></div>
+        <span class="place-district-tag">📍 ${p.district}</span>
+      </div>
+      <div class="place-body">
+        <div class="place-name-kn">${p.nameKn}</div>
+        <div class="place-name-en">${p.nameEn}</div>
+        <div class="place-desc">${p.desc}</div>
+        <div class="place-visit">🗓️ Best time: ${p.bestTime}</div>
+      </div>
+    `;
+        card.addEventListener('mousemove', (e) => tiltCard(e, card, 5));
+        card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+        grid.appendChild(card);
+      });
+    }
+
+    /**
+     * Generate a decorative SVG gradient/shape illustration as a placeholder
+     * for each place, using the place's color palette.
+     */
+    function generatePlaceSVG(colors, name) {
+      const c1 = colors[0], c2 = colors[1], c3 = colors[2];
+      const id = name.replace(/[^a-zA-Z]/g, '');
+      return `
+    <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg" aria-label="${name} illustration" role="img">
+      <defs>
+        <linearGradient id="bg${id}" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="${c1}" stop-opacity="0.6"/>
+          <stop offset="50%" stop-color="${c2}" stop-opacity="0.4"/>
+          <stop offset="100%" stop-color="${c3}" stop-opacity="0.7"/>
+        </linearGradient>
+        <radialGradient id="glow${id}" cx="50%" cy="60%">
+          <stop offset="0%" stop-color="${c1}" stop-opacity="0.3"/>
+          <stop offset="100%" stop-color="transparent"/>
+        </radialGradient>
+      </defs>
+      <rect width="400" height="180" fill="url(#bg${id})"/>
+      <circle cx="200" cy="90" r="70" fill="url(#glow${id})"/>
+      <!-- Decorative shapes -->
+      <polygon points="30,160 80,80 130,160" fill="${c2}" opacity="0.25"/>
+      <polygon points="250,170 310,60 370,170" fill="${c3}" opacity="0.2"/>
+      <polygon points="140,165 190,95 240,165" fill="${c1}" opacity="0.18"/>
+      <circle cx="320" cy="45" r="25" fill="${c1}" opacity="0.2"/>
+      <circle cx="80" cy="50" r="18" fill="${c3}" opacity="0.15"/>
+      <!-- Horizon line -->
+      <line x1="0" y1="140" x2="400" y2="140" stroke="${c2}" stroke-width="0.5" opacity="0.3"/>
+      <!-- Place name -->
+      <text x="200" y="100" text-anchor="middle" font-size="22" font-weight="700"
+            fill="white" opacity="0.5" font-family="Inter, sans-serif">${name}</text>
+    </svg>
+  `;
+    }
+
+
+    /* ═══════════════════════════════════════════════════════════════
+       SECTION 5: QUICK FACTS (Animated Counters)
+       ═══════════════════════════════════════════════════════════════ */
+    function renderFacts() {
+      const grid = document.getElementById('factsGrid');
+      grid.innerHTML = '';
+      FACTS.forEach((f, i) => {
+        const card = document.createElement('div');
+        card.className = 'fact-card';
+        card.innerHTML = `
+      <div class="fact-img-wrap">
+        <img class="fact-img" src="${f.img}" alt="${f.label}" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" loading="lazy">
+        <div class="fact-icon-fallback" style="display:none;">${f.icon}</div>
+      </div>
+      <div class="fact-value" data-target="${f.value}" data-suffix="${f.suffix || ''}" data-istext="${!!f.isText}" data-isyear="${!!f.isYear}">
+        ${f.isText ? f.suffix : '0'}
+      </div>
+      <div class="fact-label" data-kn="${f.labelKn}" data-en="${f.label}">${currentLang === 'kn' ? f.labelKn : f.label}</div>
+    `;
+        grid.appendChild(card);
+      });
+    }
+
+    function animateCounters(entries) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const counters = entry.target.querySelectorAll('.fact-value');
+        counters.forEach(el => {
+          if (el.dataset.animated) return;
+          el.dataset.animated = 'true';
+          const isText = el.dataset.istext === 'true';
+          if (isText) return; // already showing text
+          const target = parseInt(el.dataset.target) || 0;
+          const suffix = el.dataset.suffix || '';
+          const isYear = el.dataset.isyear === 'true';
+          const duration = 2000;
+          const start = performance.now();
+          function step(now) {
+            const progress = Math.min((now - start) / duration, 1);
+            const eased = 1 - Math.pow(1 - progress, 3);
+            const current = Math.floor(eased * target);
+            el.textContent = current + suffix;
+            if (progress < 1) requestAnimationFrame(step);
+            else el.textContent = target + suffix;
+          }
+          requestAnimationFrame(step);
+        });
+      });
+    }
+
+
+    /* ═══════════════════════════════════════════════════════════════
+       3D TILT EFFECT (shared utility)
+       ═══════════════════════════════════════════════════════════════ */
+    function tiltCard(e, card, maxDeg = 8) {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const rotY = ((x / rect.width) - 0.5) * maxDeg;
+      const rotX = -((y / rect.height) - 0.5) * maxDeg;
+      card.style.transform = `perspective(800px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateY(-4px)`;
+    }
+
+
+    /* ═══════════════════════════════════════════════════════════════
+       SCROLL REVEAL (Intersection Observer)
+       ═══════════════════════════════════════════════════════════════ */
+    function initScrollReveal() {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+      // Counter observer
+      const factsGrid = document.getElementById('factsGrid');
+      if (factsGrid) {
+        const counterObs = new IntersectionObserver(animateCounters, { threshold: 0.3 });
+        counterObs.observe(factsGrid);
+      }
+    }
+
+
+    /* ═══════════════════════════════════════════════════════════════
+       NAVBAR SCROLL & ACTIVE LINK
+       ═══════════════════════════════════════════════════════════════ */
+    function initNavbar() {
+      const navbar = document.getElementById('navbar');
+      const sections = document.querySelectorAll('.section, #hero');
+      const navLinks = document.querySelectorAll('.nav-links a');
+
+      window.addEventListener('scroll', () => {
+        // Scrolled class
+        navbar.classList.toggle('scrolled', window.scrollY > 50);
+
+        // Active link
+        let currentSection = '';
+        sections.forEach(sec => {
+          const rect = sec.getBoundingClientRect();
+          if (rect.top <= 100 && rect.bottom > 100) {
+            currentSection = sec.id;
+          }
+        });
+        navLinks.forEach(link => {
+          link.classList.toggle('active', link.getAttribute('href') === '#' + currentSection);
+        });
+      });
+
+      // Mobile menu toggle
+      document.getElementById('menuToggle').addEventListener('click', () => {
+        document.getElementById('navLinks').classList.toggle('open');
+      });
+
+      // Close menu on link click (mobile)
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          document.getElementById('navLinks').classList.remove('open');
+        });
+      });
+
+      // Language toggle
+      document.getElementById('langToggle').addEventListener('click', toggleLanguage);
+    }
+
+
+    /* ═══════════════════════════════════════════════════════════════
+       FLOATING BACKGROUND PARTICLES
+       ═══════════════════════════════════════════════════════════════ */
+    function spawnParticles() {
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reducedMotion) return;
+      const body = document.body;
+      for (let i = 0; i < 25; i++) {
+        const p = document.createElement('div');
+        p.className = 'parallax-particle';
+        p.setAttribute('aria-hidden', 'true');
+        const size = Math.random() * 6 + 2;
+        const isYellow = Math.random() > 0.5;
+        p.style.width = size + 'px';
+        p.style.height = size + 'px';
+        p.style.background = isYellow ? 'var(--yellow)' : 'var(--red)';
+        p.style.left = Math.random() * 100 + '%';
+        p.style.top = Math.random() * 100 + '%';
+        p.style.animationDuration = (Math.random() * 20 + 15) + 's';
+        p.style.animationDelay = -(Math.random() * 20) + 's';
+        body.appendChild(p);
+      }
+    }
+
+    /* ═══════════════════════════════════════════════════
+       SECTION: KARNATAKA FOOD FEST LOGIC
+       ═══════════════════════════════════════════════════ */
+    let currentFoodFilter = 'all';
+    let vegOnlyFilter = false;
+    let thaliItems = [];
+    let quizCurrentIndex = 0;
+    let quizAnswers = [];
+    let foodCarouselOffset = 0;
+    let foodViewMode = 'carousel'; // 'carousel' or 'grid'
+
+    function initFoodSection() {
+      renderFoodCards();
+      initFoodCarouselDrag();
+      initThaliGame();
+      initFoodQuiz();
+    }
+
+    function filterDishes(category) {
+      currentFoodFilter = category;
+      document.querySelectorAll('.food-btn[data-filter]').forEach(b => {
+        b.classList.toggle('active', b.dataset.filter === category);
+      });
+      foodCarouselOffset = 0;
+      const track = document.getElementById('foodGrid');
+      if (track) track.style.transform = 'translateX(0px)';
+      renderFoodCards();
+    }
+
+    function toggleVegOnly() {
+      vegOnlyFilter = !vegOnlyFilter;
+      const toggleBtn = document.getElementById('vegOnlyToggle');
+      if (toggleBtn) toggleBtn.classList.toggle('active', vegOnlyFilter);
+      foodCarouselOffset = 0;
+      const track = document.getElementById('foodGrid');
+      if (track) track.style.transform = 'translateX(0px)';
+      renderFoodCards();
+    }
+
+    function toggleFoodView() {
+      const track = document.getElementById('foodGrid');
+      const controls = document.getElementById('foodCarouselControls');
+      const toggleBtn = document.getElementById('foodViewToggle');
+      if (!track) return;
+
+      foodViewMode = foodViewMode === 'carousel' ? 'grid' : 'carousel';
+      if (foodViewMode === 'grid') {
+        track.classList.add('grid-mode');
+        track.style.transform = '';
+        if (controls) controls.style.display = 'none';
+        if (toggleBtn) {
+          toggleBtn.innerHTML = currentLang === 'kn'
+            ? '<span class="kn-label">🎡 ಸಿಲಿಂಡರ್ ಕ್ಯಾರೋಸೆಲ್</span><span class="en-label" style="display:none">🎡 Carousel Mode</span>'
+            : '<span class="kn-label" style="display:none">🎡 ಸಿಲಿಂಡರ್ ಕ್ಯಾರೋಸೆಲ್</span><span class="en-label">🎡 Carousel Mode</span>';
+        }
+      } else {
+        track.classList.remove('grid-mode');
+        if (controls) controls.style.display = 'flex';
+        foodCarouselOffset = 0;
+        track.style.transform = 'translateX(0px)';
+        if (toggleBtn) {
+          toggleBtn.innerHTML = currentLang === 'kn'
+            ? '<span class="kn-label">▦ ಗ್ರಿಡ್ ವೀಕ್ಷಣೆ</span><span class="en-label" style="display:none">▦ Grid View</span>'
+            : '<span class="kn-label" style="display:none">▦ ಗ್ರಿಡ್ ವೀಕ್ಷಣೆ</span><span class="en-label">▦ Grid View</span>';
+        }
+        updateFoodCarouselIndicator();
+      }
+    }
+
+    function scrollFoodCarousel(dir) {
+      const track = document.getElementById('foodGrid');
+      if (!track || foodViewMode === 'grid') return;
+      const card = track.querySelector('.food-card');
+      const step = card ? card.offsetWidth + 24 : 334;
+      const maxScroll = Math.max(0, track.scrollWidth - track.parentElement.offsetWidth);
+
+      foodCarouselOffset = Math.max(0, Math.min(foodCarouselOffset + dir * step, maxScroll));
+      track.style.transform = `translateX(-${foodCarouselOffset}px)`;
+      updateFoodCarouselIndicator();
+    }
+
+    function updateFoodCarouselIndicator() {
+      const indicator = document.getElementById('foodCarouselIndicator');
+      const track = document.getElementById('foodGrid');
+      if (!indicator || !track) return;
+      const cards = track.querySelectorAll('.food-card');
+      if (cards.length === 0) {
+        indicator.textContent = '0 / 0';
+        return;
+      }
+      const cardW = (cards[0]?.offsetWidth || 310) + 24;
+      const curIdx = Math.min(cards.length, Math.round(foodCarouselOffset / cardW) + 1);
+      indicator.textContent = `${curIdx} / ${cards.length}`;
+    }
+
+    function initFoodCarouselDrag() {
+      const track = document.getElementById('foodGrid');
+      if (!track) return;
+
+      let isDown = false;
+      let startX = 0;
+      let scrollLeft = 0;
+      let moved = false;
+
+      track.addEventListener('mousedown', (e) => {
+        if (foodViewMode === 'grid') return;
+        isDown = true;
+        moved = false;
+        track.classList.add('dragging');
+        startX = e.pageX;
+        scrollLeft = foodCarouselOffset;
+      });
+
+      window.addEventListener('mouseup', () => {
+        if (!isDown) return;
+        isDown = false;
+        track.classList.remove('dragging');
+        updateFoodCarouselIndicator();
+      });
+
+      track.addEventListener('mousemove', (e) => {
+        if (!isDown || foodViewMode === 'grid') return;
+        e.preventDefault();
+        const x = e.pageX;
+        const walk = (startX - x) * 1.2;
+        if (Math.abs(walk) > 5) moved = true;
+        const maxScroll = Math.max(0, track.scrollWidth - track.parentElement.offsetWidth);
+        foodCarouselOffset = Math.max(0, Math.min(scrollLeft + walk, maxScroll));
+        track.style.transform = `translateX(-${foodCarouselOffset}px)`;
+      });
+
+      // Touch Swipe for mobile/tablets
+      let touchStartX = 0;
+      track.addEventListener('touchstart', (e) => {
+        if (foodViewMode === 'grid') return;
+        touchStartX = e.touches[0].pageX;
+        scrollLeft = foodCarouselOffset;
+      }, { passive: true });
+
+      track.addEventListener('touchmove', (e) => {
+        if (foodViewMode === 'grid') return;
+        const x = e.touches[0].pageX;
+        const walk = (touchStartX - x) * 1.1;
+        const maxScroll = Math.max(0, track.scrollWidth - track.parentElement.offsetWidth);
+        foodCarouselOffset = Math.max(0, Math.min(scrollLeft + walk, maxScroll));
+        track.style.transform = `translateX(-${foodCarouselOffset}px)`;
+        updateFoodCarouselIndicator();
+      }, { passive: true });
+    }
+
+    function renderFoodCards() {
+      const grid = document.getElementById('foodGrid');
+      if (!grid) return;
+      grid.innerHTML = '';
+
+      const filtered = DISHES.filter(d => {
+        const matchesCat = currentFoodFilter === 'all' || d.category === currentFoodFilter;
+        const matchesVeg = !vegOnlyFilter || d.isVeg;
+        return matchesCat && matchesVeg;
+      });
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `<div style="grid-column: 1/-1; text-align: center; color: rgba(255,248,231,0.6); padding: 40px;">
+      ${currentLang === 'kn' ? 'ಯಾವುದೇ ತಿನಿಸು ಕಂಡುಬಂದಿಲ್ಲ.' : 'No dishes found matching the filter.'}
+    </div>`;
+        updateFoodCarouselIndicator();
+        return;
+      }
+
+      filtered.forEach(d => {
+        const card = document.createElement('div');
+        card.className = 'food-card';
+        card.tabIndex = 0;
+        card.setAttribute('role', 'button');
+        card.setAttribute('aria-label', currentLang === 'kn' ? `${d.nameKn} ವಿವರಗಳು` : `${d.nameEn} details`);
+
+        const vegClass = d.isVeg ? '' : 'non-veg';
+        const vegTitle = d.isVeg ? (currentLang === 'kn' ? 'ಸಸ್ಯಹಾರಿ' : 'Veg') : (currentLang === 'kn' ? 'ಮಾಂಸಾಹಾರಿ' : 'Non-Veg');
+
+        card.innerHTML = `
+      <div class="steam-container" aria-hidden="true">
+        <span class="steam-puff"></span>
+        <span class="steam-puff"></span>
+        <span class="steam-puff"></span>
+      </div>
+      <div class="food-veg-badge ${vegClass}" title="${vegTitle}">
+        <div class="food-veg-dot"></div>
+      </div>
+      <div class="food-region-badge">📍 ${currentLang === 'kn' ? d.regionKn.split('/')[0].trim() : d.regionEn.split('/')[0].trim()}</div>
+      <div class="food-art-wrap">${d.emoji}</div>
+      <div class="food-name-kn">${d.nameKn}</div>
+      <div class="food-name-en">${d.nameEn}</div>
+      <div class="food-desc">${currentLang === 'kn' ? d.descKn : d.descEn}</div>
+      <div class="food-ingredients-preview">
+        🔍 ${currentLang === 'kn' ? 'ಪದಾರ್ಥಗಳು:' : 'Ingredients:'} ${(currentLang === 'kn' ? d.ingredientsKn : d.ingredientsEn).slice(0, 3).join(', ')}...
+      </div>
+    `;
+
+        // 3D Tilt effect
+        card.addEventListener('mousemove', (e) => tiltCard(e, card, 8));
+        card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+
+        // Open detail modal on click or Enter key
+        card.addEventListener('click', () => openFoodModal(d));
+        card.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            openFoodModal(d);
+          }
+        });
+
+        grid.appendChild(card);
+      });
+
+      updateFoodCarouselIndicator();
+    }
+
+    function updateFoodLanguage() {
+      renderFoodCards();
+      renderThaliTray();
+      updateThaliPlacedDisplay();
+      loadQuizQuestion();
+
+      const toggleBtn = document.getElementById('foodViewToggle');
+      if (toggleBtn) {
+        if (foodViewMode === 'grid') {
+          toggleBtn.innerHTML = currentLang === 'kn'
+            ? '<span class="kn-label">🎡 ಸಿಲಿಂಡರ್ ಕ್ಯಾರೋಸೆಲ್</span><span class="en-label" style="display:none">🎡 Carousel Mode</span>'
+            : '<span class="kn-label" style="display:none">🎡 ಸಿಲಿಂಡರ್ ಕ್ಯಾರೋಸೆಲ್</span><span class="en-label">🎡 Carousel Mode</span>';
+        } else {
+          toggleBtn.innerHTML = currentLang === 'kn'
+            ? '<span class="kn-label">▦ ಗ್ರಿಡ್ ವೀಕ್ಷಣೆ</span><span class="en-label" style="display:none">▦ Grid View</span>'
+            : '<span class="kn-label" style="display:none">▦ ಗ್ರಿಡ್ ವೀಕ್ಷಣೆ</span><span class="en-label">▦ Grid View</span>';
+        }
+      }
+    }
+
+    function openFoodModal(d) {
+      const modal = document.getElementById('foodModal');
+      if (!modal) return;
+
+      document.getElementById('modalDishIcon').textContent = d.emoji;
+      document.getElementById('modalDishName').textContent = d.nameKn;
+      document.getElementById('modalDishEn').textContent = d.nameEn;
+      document.getElementById('modalDishDesc').textContent = currentLang === 'kn' ? d.descKn : d.descEn;
+
+      const catNamesKn = { breakfast: 'ತಿಂಡಿ (Breakfast)', main: 'ಮುಖ್ಯ ಊಟ (Main Meal)', sweets: 'ಸಿಹಿ (Sweet)', drinks: 'ಪಾನೀಯ (Beverage)' };
+      const catNamesEn = { breakfast: 'Breakfast', main: 'Main Meal', sweets: 'Sweets / Dessert', drinks: 'Traditional Beverage' };
+      document.getElementById('modalCategoryTag').textContent = currentLang === 'kn' ? (catNamesKn[d.category] || d.category) : (catNamesEn[d.category] || d.category);
+
+      // Ingredients tags
+      const ingContainer = document.getElementById('modalIngredients');
+      ingContainer.innerHTML = '';
+      const ingredients = currentLang === 'kn' ? d.ingredientsKn : d.ingredientsEn;
+      ingredients.forEach(ing => {
+        const span = document.createElement('span');
+        span.className = 'ingredient-tag';
+        span.textContent = ing;
+        ingContainer.appendChild(span);
+      });
+
+      // Region label
+      document.getElementById('modalRegionName').textContent = '📍 ' + (currentLang === 'kn' ? d.regionKn : d.regionEn);
+
+      // Render SVG Map highlighting this dish's region
+      renderKarnatakaRegionMap(d.regionKey);
+
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeFoodModal() {
+      const modal = document.getElementById('foodModal');
+      if (!modal) return;
+      modal.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    function handleModalBackdropClick(e) {
+      if (e.target.id === 'foodModal') {
+        closeFoodModal();
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeFoodModal();
+    });
+
+    /**
+     * Interactive SVG Map of Karnataka highlighting the relevant zone
+     */
+    function renderKarnatakaRegionMap(activeKey) {
+      const container = document.getElementById('modalRegionSvgContainer');
+      if (!container) return;
+
+      const isCoast = activeKey === 'coastal';
+      const isNorth = activeKey === 'north_karnataka';
+      const isCentral = activeKey === 'central_karnataka';
+      const isMalenadu = activeKey === 'malenadu';
+      const isMysore = activeKey === 'mysore' || activeKey === 'mandya';
+      const isBlr = activeKey === 'bengaluru';
+      const isAll = activeKey === 'statewide';
+
+      const activeColor = '#FFC20E';
+      const activeStroke = '#FFD700';
+      const inactiveColor = '#2B1218';
+      const inactiveStroke = 'rgba(255,194,14,0.2)';
+
+      container.innerHTML = `
+    <svg viewBox="0 0 300 360" xmlns="http://www.w3.org/2000/svg" aria-label="Karnataka Regions Map">
+      <defs>
+        <filter id="glowPin" x="-20%" y="-20%" width="140%" height="140%">
+          <feGaussianBlur stdDeviation="3" result="blur" />
+          <feComposite in="SourceGraphic" in2="blur" operator="over" />
+        </filter>
+      </defs>
+
+      <!-- Geographic Zone Paths -->
+      <g stroke-width="1.5" stroke-linejoin="round">
+        <!-- 1. North Karnataka -->
+        <path id="reg_north" d="M90 30 L210 20 L245 80 L220 135 L135 145 L85 100 Z" 
+              fill="${isNorth || isAll ? activeColor : inactiveColor}" 
+              stroke="${isNorth || isAll ? activeStroke : inactiveStroke}" opacity="${isNorth || isAll ? '0.95' : '0.6'}">
+          <title>North Karnataka</title>
+        </path>
+
+        <!-- 2. Central Karnataka (Davangere) -->
+        <path id="reg_central" d="M85 100 L135 145 L190 145 L205 190 L115 200 L80 160 Z" 
+              fill="${isCentral || isAll ? activeColor : inactiveColor}" 
+              stroke="${isCentral || isAll ? activeStroke : inactiveStroke}" opacity="${isCentral || isAll ? '0.95' : '0.6'}">
+          <title>Central Karnataka (Davangere)</title>
+        </path>
+
+        <!-- 3. Coastal Karnataka (Karavali) -->
+        <path id="reg_coastal" d="M70 120 L85 100 L80 160 L75 220 L60 280 L45 285 L50 210 L60 140 Z" 
+              fill="${isCoast || isAll ? activeColor : inactiveColor}" 
+              stroke="${isCoast || isAll ? activeStroke : inactiveStroke}" opacity="${isCoast || isAll ? '0.95' : '0.6'}">
+          <title>Coastal Karnataka (Karavali)</title>
+        </path>
+
+        <!-- 4. Malenadu (Chikkamagaluru / Kodagu / Shivamogga) -->
+        <path id="reg_malenadu" d="M75 220 L115 200 L125 240 L95 285 L60 280 Z" 
+              fill="${isMalenadu || isAll ? activeColor : inactiveColor}" 
+              stroke="${isMalenadu || isAll ? activeStroke : inactiveStroke}" opacity="${isMalenadu || isAll ? '0.95' : '0.6'}">
+          <title>Malenadu (Western Ghats)</title>
+        </path>
+
+        <!-- 5. South Karnataka / Old Mysore / Mandya -->
+        <path id="reg_mysore" d="M95 285 L125 240 L180 230 L200 280 L160 335 L110 325 Z" 
+              fill="${isMysore || isAll ? activeColor : inactiveColor}" 
+              stroke="${isMysore || isAll ? activeStroke : inactiveStroke}" opacity="${isMysore || isAll ? '0.95' : '0.6'}">
+          <title>Mysuru / Mandya (South Karnataka)</title>
+        </path>
+
+        <!-- 6. Bengaluru Urban -->
+        <path id="reg_bengaluru" d="M180 230 L235 225 L250 270 L200 280 Z" 
+              fill="${isBlr || isAll ? activeColor : inactiveColor}" 
+              stroke="${isBlr || isAll ? activeStroke : inactiveStroke}" opacity="${isBlr || isAll ? '0.95' : '0.6'}">
+          <title>Bengaluru</title>
+        </path>
+      </g>
+
+      <!-- Regional Labels -->
+      <text x="165" y="85" font-size="11" font-weight="700" fill="${isNorth || isAll ? '#1A1012' : '#FFD54F'}" text-anchor="middle" font-family="Inter, sans-serif">North Karnataka</text>
+      <text x="145" y="175" font-size="10" font-weight="700" fill="${isCentral || isAll ? '#1A1012' : '#FFD54F'}" text-anchor="middle" font-family="Inter, sans-serif">Davangere</text>
+      <text x="40" y="210" font-size="9" font-weight="700" fill="${isCoast || isAll ? '#1A1012' : '#FFD54F'}" text-anchor="middle" font-family="Inter, sans-serif" transform="rotate(-75 40 210)">Coastal</text>
+      <text x="95" y="250" font-size="10" font-weight="700" fill="${isMalenadu || isAll ? '#1A1012' : '#FFD54F'}" text-anchor="middle" font-family="Inter, sans-serif">Malenadu</text>
+      <text x="150" y="295" font-size="11" font-weight="700" fill="${isMysore || isAll ? '#1A1012' : '#FFD54F'}" text-anchor="middle" font-family="Inter, sans-serif">Mysuru</text>
+      <text x="220" y="255" font-size="10" font-weight="700" fill="${isBlr || isAll ? '#1A1012' : '#FFD54F'}" text-anchor="middle" font-family="Inter, sans-serif">Bengaluru</text>
+    </svg>
+  `;
+    }
+
+    /* ─── Thali Mini-Game ─── */
+    function initThaliGame() {
+      renderThaliTray();
+      updateThaliPlacedDisplay();
+    }
+
+    function renderThaliTray() {
+      const tray = document.getElementById('thaliTray');
+      if (!tray) return;
+      tray.innerHTML = '';
+
+      DISHES.forEach(d => {
+        const isAdded = thaliItems.some(item => item.id === d.id);
+        const chip = document.createElement('div');
+        chip.className = `thali-dish-chip ${isAdded ? 'added' : ''}`;
+        chip.innerHTML = `${d.emoji} ${currentLang === 'kn' ? d.nameKn : d.nameEn}`;
+
+        if (!isAdded) {
+          chip.setAttribute('draggable', 'true');
+          chip.title = currentLang === 'kn' ? 'ಬಾಳೆ ಎಲೆಗೆ ಡ್ರ್ಯಾಗ್ ಮಾಡಿ ಅಥವಾ ಕ್ಲಿಕ್ ಮಾಡಿ' : 'Drag onto leaf or click to add';
+          chip.addEventListener('dragstart', (e) => {
+            e.dataTransfer.setData('text/plain', d.id);
+            e.dataTransfer.effectAllowed = 'copy';
+          });
+          chip.addEventListener('click', () => addDishToThali(d));
+        }
+        tray.appendChild(chip);
+      });
+    }
+
+    function handleThaliDragOver(e) {
+      e.preventDefault();
+      if (e.dataTransfer) e.dataTransfer.dropEffect = 'copy';
+      const leaf = document.getElementById('thaliLeaf');
+      if (leaf) leaf.classList.add('highlight');
+    }
+
+    function handleThaliDragLeave(e) {
+      const leaf = document.getElementById('thaliLeaf');
+      if (leaf) leaf.classList.remove('highlight');
+    }
+
+    function handleThaliDrop(e) {
+      e.preventDefault();
+      const leaf = document.getElementById('thaliLeaf');
+      if (leaf) leaf.classList.remove('highlight');
+      const dishId = e.dataTransfer ? e.dataTransfer.getData('text/plain') : null;
+      if (dishId) {
+        const dish = DISHES.find(d => d.id === dishId);
+        if (dish) addDishToThali(dish);
+      }
+    }
+
+    function addDishToThali(dish) {
+      if (thaliItems.some(i => i.id === dish.id)) return;
+      thaliItems.push(dish);
+      updateThaliPlacedDisplay();
+      renderThaliTray();
+
+      if (thaliItems.length >= 6) {
+        const celeb = document.getElementById('thaliCelebration');
+        if (celeb) {
+          celeb.style.display = 'block';
+          celeb.textContent = currentLang === 'kn'
+            ? '🎉 ಊಟ ಆಯ್ತಾ? Enjoy your meal! ಬಾಳೆ ಎಲೆಯ ಪರಿಪೂರ್ಣ ಕರುನಾಡ ಊಟ ಸಿದ್ಧವಾಗಿದೆ!'
+            : '🎉 ಊಟ ಆಯ್ತಾ? Enjoy your meal! Your royal Karnataka banana leaf feast is ready!';
+        }
+        launchConfetti();
+      }
+    }
+
+    function removeDishFromThali(dishId) {
+      thaliItems = thaliItems.filter(i => i.id !== dishId);
+      updateThaliPlacedDisplay();
+      renderThaliTray();
+
+      if (thaliItems.length < 6) {
+        const celeb = document.getElementById('thaliCelebration');
+        if (celeb) celeb.style.display = 'none';
+      }
+    }
+
+    function resetThali() {
+      thaliItems = [];
+      const celeb = document.getElementById('thaliCelebration');
+      if (celeb) celeb.style.display = 'none';
+      updateThaliPlacedDisplay();
+      renderThaliTray();
+    }
+
+    function updateThaliPlacedDisplay() {
+      const leaf = document.getElementById('thaliLeaf');
+      const countBadge = document.getElementById('thaliCountBadge');
+      const emptyMsg = document.getElementById('thaliEmptyMsg');
+      if (!leaf) return;
+
+      leaf.querySelectorAll('.thali-item-placed').forEach(el => el.remove());
+
+      if (thaliItems.length === 0) {
+        if (emptyMsg) {
+          emptyMsg.style.display = 'block';
+          emptyMsg.textContent = currentLang === 'kn'
+            ? '🍃 ನಿಮ್ಮ ಬಾಳೆ ಎಲೆ ಸಿದ್ಧವಾಗಿದೆ. ತಿನಿಸುಗಳನ್ನು ಆಯ್ಕೆ ಮಾಡಿ ಬಡಿಸಿ!'
+            : '🍃 Your banana leaf is ready. Tap dishes from below to serve!';
+        }
+      } else {
+        if (emptyMsg) emptyMsg.style.display = 'none';
+        thaliItems.forEach(item => {
+          const itemEl = document.createElement('div');
+          itemEl.className = 'thali-item-placed';
+          itemEl.title = currentLang === 'kn' ? 'ತೆಗೆಯಲು ಕ್ಲಿಕ್ ಮಾಡಿ' : 'Click to remove';
+          itemEl.innerHTML = `${item.emoji} ${currentLang === 'kn' ? item.nameKn : item.nameEn} <span class="remove-icon">✕</span>`;
+          itemEl.addEventListener('click', () => removeDishFromThali(item.id));
+          leaf.appendChild(itemEl);
+        });
+      }
+
+      if (countBadge) {
+        countBadge.textContent = currentLang === 'kn'
+          ? `${thaliItems.length} / 6 ಬಡಿಸಲಾಗಿದೆ`
+          : `${thaliItems.length} / 6 items served`;
+      }
+    }
+
+    /* ─── Personality Quiz ─── */
+    function initFoodQuiz() {
+      quizCurrentIndex = 0;
+      quizAnswers = [];
+      const resultBox = document.getElementById('quizResult');
+      const quizBox = document.getElementById('quizBox');
+      if (resultBox) resultBox.style.display = 'none';
+      if (quizBox) quizBox.style.display = 'block';
+      loadQuizQuestion();
+    }
+
+    function loadQuizQuestion() {
+      const quizBox = document.getElementById('quizBox');
+      const progressEl = document.getElementById('quizProgress');
+      const questionEl = document.getElementById('quizQuestion');
+      const optionsEl = document.getElementById('quizOptions');
+      if (!quizBox || !progressEl || !questionEl || !optionsEl) return;
+
+      if (quizCurrentIndex >= QUIZ_QUESTIONS.length) {
+        showQuizResult();
+        return;
+      }
+
+      const q = QUIZ_QUESTIONS[quizCurrentIndex];
+      progressEl.textContent = currentLang === 'kn'
+        ? `ಪ್ರಶ್ನೆ ${quizCurrentIndex + 1} / ${QUIZ_QUESTIONS.length}`
+        : `Question ${quizCurrentIndex + 1} of ${QUIZ_QUESTIONS.length}`;
+      questionEl.textContent = currentLang === 'kn' ? q.qKn : q.qEn;
+
+      optionsEl.innerHTML = '';
+      q.options.forEach((opt, idx) => {
+        const btn = document.createElement('button');
+        btn.className = 'quiz-opt-btn';
+        const marker = String.fromCharCode(65 + idx);
+        btn.innerHTML = `
+      <span class="quiz-opt-marker">${marker}</span>
+      <span>${currentLang === 'kn' ? opt.textKn : opt.textEn}</span>
+    `;
+        btn.addEventListener('click', () => selectQuizOption(opt.dish));
+        optionsEl.appendChild(btn);
+      });
+    }
+
+    function selectQuizOption(dishKey) {
+      quizAnswers.push(dishKey);
+      quizCurrentIndex++;
+      if (quizCurrentIndex < QUIZ_QUESTIONS.length) {
+        loadQuizQuestion();
+      } else {
+        showQuizResult();
+      }
+    }
+
+    function showQuizResult() {
+      const quizBox = document.getElementById('quizBox');
+      const resultBox = document.getElementById('quizResult');
+      if (quizBox) quizBox.style.display = 'none';
+      if (resultBox) resultBox.style.display = 'block';
+
+      const counts = {};
+      quizAnswers.forEach(d => { counts[d] = (counts[d] || 0) + 1; });
+      let topDish = 'mysore_pak';
+      let maxVotes = 0;
+      for (const d in counts) {
+        if (counts[d] > maxVotes) {
+          maxVotes = counts[d];
+          topDish = d;
+        }
+      }
+
+      const res = QUIZ_RESULTS[topDish] || QUIZ_RESULTS.mysore_pak;
+      document.getElementById('resultDishArt').textContent = res.art;
+      document.getElementById('resultDishTitle').textContent = currentLang === 'kn' ? res.dishKn : res.dishEn;
+      document.getElementById('resultDishDesc').innerHTML = `
+    <strong>${currentLang === 'kn' ? res.tagKn : res.tagEn}</strong><br><br>
+    ${currentLang === 'kn' ? res.descKn : res.descEn}
+  `;
+
+      launchConfetti();
+    }
+
+    function restartQuiz() {
+      initFoodQuiz();
+    }
+
+    function downloadQuizCard() {
+      const canvas = document.getElementById('quizCanvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      const W = 900, H = 600;
+
+      const bg = ctx.createLinearGradient(0, 0, W, H);
+      bg.addColorStop(0, '#1E080C');
+      bg.addColorStop(0.5, '#350A14');
+      bg.addColorStop(1, '#110306');
+      ctx.fillStyle = bg;
+      ctx.fillRect(0, 0, W, H);
+
+      // Border: Karnataka Yellow and Red dual frame
+      ctx.lineWidth = 8;
+      ctx.strokeStyle = '#FFC20E';
+      ctx.strokeRect(16, 16, W - 32, H - 32);
+
+      ctx.lineWidth = 3;
+      ctx.strokeStyle = '#E31E24';
+      ctx.strokeRect(26, 26, W - 52, H - 52);
+
+      // Top header ribbon: Karnataka Flag colors
+      ctx.fillStyle = '#FFC20E';
+      ctx.fillRect(32, 32, (W - 64) / 2, 8);
+      ctx.fillStyle = '#E31E24';
+      ctx.fillRect(32 + (W - 64) / 2, 32, (W - 64) / 2, 8);
+
+      ctx.font = 'bold 20px "Baloo Tamma 2", "Noto Sans Kannada", sans-serif';
+      ctx.fillStyle = '#FFC20E';
+      ctx.textAlign = 'center';
+      ctx.fillText('🏴 ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ | KANNADA RAJYOTSAVA 🏴', W / 2, 80);
+
+      ctx.font = '16px "Inter", sans-serif';
+      ctx.fillStyle = 'rgba(255,248,231,0.6)';
+      ctx.fillText('ಕರ್ನಾಟಕದ ಅಡುಗೆ • FOOD FEST PERSONALITY MATCH', W / 2, 110);
+
+      const dishArt = document.getElementById('resultDishArt').textContent || '🥞';
+      ctx.font = '85px sans-serif';
+      ctx.fillText(dishArt, W / 2, 220);
+
+      const dishTitle = document.getElementById('resultDishTitle').textContent || 'ಮೈಸೂರು ಪಾಕ್';
+      ctx.font = 'bold 34px "Baloo Tamma 2", "Noto Sans Kannada", sans-serif';
+      ctx.fillStyle = '#FFC20E';
+      ctx.fillText(dishTitle, W / 2, 290);
+
+      ctx.font = '18px "Noto Sans Kannada", "Inter", sans-serif';
+      ctx.fillStyle = '#FFF8E7';
+
+      const descEl = document.getElementById('resultDishDesc');
+      const text = descEl ? descEl.innerText.replace(/\n\n/g, ' — ') : '';
+      wrapCanvasText(ctx, text, W / 2, 355, 720, 28);
+
+      ctx.font = '15px "Inter", sans-serif';
+      ctx.fillStyle = '#FFD54F';
+      ctx.fillText('ಕನ್ನಡವೇ ಸತ್ಯ, ಕನ್ನಡವೇ ನಿತ್ಯ • Celebrate Karnataka Rajyotsava', W / 2, 545);
+
+      const link = document.createElement('a');
+      link.download = 'karnataka_food_personality_match.png';
+      link.href = canvas.toDataURL('image/png');
+      link.click();
+    }
+
+    function wrapCanvasText(ctx, text, x, y, maxWidth, lineHeight) {
+      const words = text.split(' ');
+      let line = '';
+      for (let n = 0; n < words.length; n++) {
+        const testLine = line + words[n] + ' ';
+        const metrics = ctx.measureText(testLine);
+        if (metrics.width > maxWidth && n > 0) {
+          ctx.fillText(line, x, y);
+          line = words[n] + ' ';
+          y += lineHeight;
+        } else {
+          line = testLine;
+        }
+      }
+      ctx.fillText(line, x, y);
+    }
+
+
+    /* ═══════════════════════════════════════════════════════════════
+       INITIALIZE
+       ═══════════════════════════════════════════════════════════════ */
+    document.addEventListener('DOMContentLoaded', () => {
+      // Initialize Three.js hero
+      initHeroScene();
+
+      // Render all sections
+      renderAlphaCards('vowels');
+      renderPoets();
+      renderCinema();
+      renderPlaces();
+      initFoodSection();
+      renderFacts();
+
+      // Set up navigation
+      initNavbar();
+
+      // Set up scroll reveal
+      initScrollReveal();
+
+      // Spawn background particles
+      spawnParticles();
+
+      // Handle confetti canvas resize
+      window.addEventListener('resize', () => {
+        const c = document.getElementById('confetti-canvas');
+        c.width = window.innerWidth;
+        c.height = window.innerHeight;
+      });
+    });
+  </script>
+</body>
+
+</html>
